@@ -1,2 +1,2 @@
 # snippet
-All code I write.
+All code I write for study and manage my computer.
