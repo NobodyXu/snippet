@@ -1,0 +1,3 @@
+echo "ass\
+#hhh
+    sdddd"

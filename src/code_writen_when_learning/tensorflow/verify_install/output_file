@@ -1,0 +1,1161 @@
+Uninstalling tensorflow-1.8.0rc1:
+  Successfully uninstalled tensorflow-1.8.0rc1
+Collecting tensorflow==0.12.0rc0
+  Using cached https://files.pythonhosted.org/packages/67/06/15153c48b2281bc59f8a70f2ae681723ece29ebc0015883117fb28abaf68/tensorflow-0.12.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==0.12.0rc0)
+Collecting protobuf==3.1.0 (from tensorflow==0.12.0rc0)
+  Using cached https://files.pythonhosted.org/packages/b2/30/ab593c6ae73b45a5ef0b0af24908e8aec27f79efcda2e64a3df7af0b92a2/protobuf-3.1.0-py2.py3-none-any.whl
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==0.12.0rc0)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==0.12.0rc0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf==3.1.0->tensorflow==0.12.0rc0)
+Installing collected packages: protobuf, tensorflow
+  Found existing installation: protobuf 3.5.2.post1
+    Uninstalling protobuf-3.5.2.post1:
+      Successfully uninstalled protobuf-3.5.2.post1
+Successfully installed protobuf-3.1.0 tensorflow-0.12.0rc0
+Uninstalling tensorflow-0.12.0rc0:
+  Successfully uninstalled tensorflow-0.12.0rc0
+Collecting tensorflow==0.12.0rc1
+  Using cached https://files.pythonhosted.org/packages/66/47/d6bb91a11684733ad565b891d561097ef10f8cb7bae87e5ad692207024e3/tensorflow-0.12.0rc1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: protobuf==3.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==0.12.0rc1)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==0.12.0rc1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==0.12.0rc1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==0.12.0rc1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf==3.1.0->tensorflow==0.12.0rc1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-0.12.0rc1
+Uninstalling tensorflow-0.12.0rc1:
+  Successfully uninstalled tensorflow-0.12.0rc1
+Collecting tensorflow==0.12.0
+  Using cached https://files.pythonhosted.org/packages/9e/7c/f50ca985e43cff46a6d92abb088e8328b9be13335dc44af291ac1ed11862/tensorflow-0.12.0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==0.12.0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==0.12.0)
+Requirement already satisfied: protobuf==3.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==0.12.0)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==0.12.0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf==3.1.0->tensorflow==0.12.0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-0.12.0
+Uninstalling tensorflow-0.12.0:
+  Successfully uninstalled tensorflow-0.12.0
+Collecting tensorflow==0.12.1
+  Using cached https://files.pythonhosted.org/packages/e5/5c/56e6522fdcd6f8739dcbc4de62e8b0040e141785bb42e5b53a83b0ba3e58/tensorflow-0.12.1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: protobuf>=3.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==0.12.1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==0.12.1)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==0.12.1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==0.12.1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.1.0->tensorflow==0.12.1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-0.12.1
+Uninstalling tensorflow-0.12.1:
+  Successfully uninstalled tensorflow-0.12.1
+Collecting tensorflow==1.0.0
+  Using cached https://files.pythonhosted.org/packages/b0/a6/a8b857c8b383c4a2a3dece8a3c0f86e9273b8fd7ce31528f8ac809fc5910/tensorflow-1.0.0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.0.0)
+Requirement already satisfied: protobuf>=3.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.0.0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.0.0)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.0.0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.1.0->tensorflow==1.0.0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.0.0
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.0.0:
+  Successfully uninstalled tensorflow-1.0.0
+Collecting tensorflow==1.0.1
+  Using cached https://files.pythonhosted.org/packages/1f/38/c255432f18005362dd2459e3bff2b2411eb7d02ca09fa20ee1dd1311f69f/tensorflow-1.0.1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.0.1)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.0.1)
+Requirement already satisfied: protobuf>=3.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.0.1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.0.1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.1.0->tensorflow==1.0.1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.0.1
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.0.1:
+  Successfully uninstalled tensorflow-1.0.1
+Collecting tensorflow==1.1.0rc0
+  Using cached https://files.pythonhosted.org/packages/2a/1e/6daa6c848a7ecbe7244c05542e33b68034adb03f60b0245f2606f0fa8334/tensorflow-1.1.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.1.0rc0)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0rc0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.1.0rc0)
+Collecting protobuf>=3.2.0 (from tensorflow==1.1.0rc0)
+  Using cached https://files.pythonhosted.org/packages/5b/c3/9b947e301e19bea75dc8c1fd3710eed5d2b31aa13ae13d5e38e891f784cc/protobuf-3.5.2.post1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0rc0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.1.0rc0)
+Installing collected packages: protobuf, tensorflow
+  Found existing installation: protobuf 3.1.0
+    Uninstalling protobuf-3.1.0:
+      Successfully uninstalled protobuf-3.1.0
+Successfully installed protobuf-3.5.2.post1 tensorflow-1.1.0rc0
+2018-04-23 16:11:38.219454: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:11:38.219516: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.1.0rc0:
+  Successfully uninstalled tensorflow-1.1.0rc0
+Collecting tensorflow==1.1.0rc1
+  Using cached https://files.pythonhosted.org/packages/c4/6e/1dfced905f0aaae5e2daf6590e3777b6ddc3c64f068adf9d530bb63d30e6/tensorflow-1.1.0rc1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.1.0rc1)
+Requirement already satisfied: protobuf>=3.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0rc1)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0rc1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.1.0rc1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0rc1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.1.0rc1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.1.0rc1
+2018-04-23 16:12:05.509105: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:12:05.509172: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.1.0rc1:
+  Successfully uninstalled tensorflow-1.1.0rc1
+Collecting tensorflow==1.1.0rc2
+  Using cached https://files.pythonhosted.org/packages/8e/d8/3e17671b419760bfd353c8f55c0bea7e3bb716d224eaaf0cf0a63a570dff/tensorflow-1.1.0rc2-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0rc2)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.1.0rc2)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.1.0rc2)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0rc2)
+Requirement already satisfied: protobuf>=3.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0rc2)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.1.0rc2)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.1.0rc2
+2018-04-23 16:12:34.072113: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:12:34.072264: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.1.0rc2:
+  Successfully uninstalled tensorflow-1.1.0rc2
+Collecting tensorflow==1.1.0
+  Using cached https://files.pythonhosted.org/packages/fd/1a/b6e78223c8e05a8bdee8f9bb20d4926f81db50e583632a1cde6e5b5ec2f0/tensorflow-1.1.0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0)
+Requirement already satisfied: protobuf>=3.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.1.0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.1.0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.1.0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.1.0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.1.0
+2018-04-23 16:13:03.635180: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:13:03.635256: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.1.0:
+  Successfully uninstalled tensorflow-1.1.0
+Collecting tensorflow==1.2.0rc0
+  Using cached https://files.pythonhosted.org/packages/8f/98/19174a08927c31db4cb2f551c08d09f7895e7a6db01717da3aba33215f4c/tensorflow-1.2.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+Collecting markdown==2.2.0 (from tensorflow==1.2.0rc0)
+Requirement already satisfied: protobuf>=3.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc0)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.2.0rc0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.2.0rc0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.2.0rc0)
+Installing collected packages: markdown, tensorflow
+  Found existing installation: Markdown 2.6.11
+    Uninstalling Markdown-2.6.11:
+      Successfully uninstalled Markdown-2.6.11
+Successfully installed markdown-2.2.0 tensorflow-1.2.0rc0
+2018-04-23 16:13:33.235836: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:13:33.235901: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.2.0rc0:
+  Successfully uninstalled tensorflow-1.2.0rc0
+Collecting tensorflow==1.2.0rc1
+  Using cached https://files.pythonhosted.org/packages/35/e7/ce850806192974b135eda6ea4d67a7839d6e202d7bacb7bcc94a08d933ae/tensorflow-1.2.0rc1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.2.0rc1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc1)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.2.0rc1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc1)
+Requirement already satisfied: markdown==2.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc1)
+Requirement already satisfied: protobuf>=3.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.2.0rc1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.2.0rc1
+2018-04-23 16:14:05.182385: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:14:05.182436: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.2.0rc1:
+  Successfully uninstalled tensorflow-1.2.0rc1
+Collecting tensorflow==1.2.0rc2
+  Using cached https://files.pythonhosted.org/packages/db/d6/08dd85ad02a26291ff761e0580b967b3183b2abf720789fffddb2c04c339/tensorflow-1.2.0rc2-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc2)
+Requirement already satisfied: protobuf>=3.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc2)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.2.0rc2)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc2)
+Requirement already satisfied: backports.weakref==1.0rc1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc2)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc2)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.2.0rc2)
+Requirement already satisfied: markdown==2.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc2)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0rc2)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.2.0rc2)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.2.0rc2
+2018-04-23 16:14:36.996133: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:14:36.996200: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.2.0rc2:
+  Successfully uninstalled tensorflow-1.2.0rc2
+Collecting tensorflow==1.2.0
+  Using cached https://files.pythonhosted.org/packages/f0/2e/49c8cf629dfd4bc4932e1a721ea2790869a32dcf9752f322f3301b99e852/tensorflow-1.2.0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.2.0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0)
+Requirement already satisfied: backports.weakref==1.0rc1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0)
+Requirement already satisfied: markdown==2.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0)
+Requirement already satisfied: protobuf>=3.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.2.0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.2.0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.2.0
+2018-04-23 16:15:07.097184: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:15:07.097232: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.2.0:
+  Successfully uninstalled tensorflow-1.2.0
+Collecting tensorflow==1.2.1
+  Using cached https://files.pythonhosted.org/packages/26/fe/62ce8c45c13831582998da21590b2fc1c305fdd2f0c9d2ced110f9874256/tensorflow-1.2.1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: backports.weakref==1.0rc1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.2.1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.1)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.1)
+Requirement already satisfied: protobuf>=3.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.1)
+Collecting markdown>=2.6.8 (from tensorflow==1.2.1)
+  Using cached https://files.pythonhosted.org/packages/6d/7d/488b90f470b96531a3f5788cf12a93332f543dbab13c423a5e7ce96a0493/Markdown-2.6.11-py2.py3-none-any.whl
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.2.1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.2.1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.2.1)
+Installing collected packages: markdown, tensorflow
+  Found existing installation: Markdown 2.2.0
+    Uninstalling Markdown-2.2.0:
+      Successfully uninstalled Markdown-2.2.0
+Successfully installed markdown-2.6.11 tensorflow-1.2.1
+2018-04-23 16:15:37.485471: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:15:37.485521: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.2.1:
+  Successfully uninstalled tensorflow-1.2.1
+Collecting tensorflow==1.3.0rc0
+  Using cached https://files.pythonhosted.org/packages/34/b6/62aa30649099b9890b9bbb32ebb92d4edd8395b3ca8bdc169a35b5478c80/tensorflow-1.3.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.3.0rc0)
+Requirement already satisfied: tensorflow-tensorboard in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0rc0)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0rc0)
+Requirement already satisfied: protobuf>=3.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0rc0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.3.0rc0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.3.0rc0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.3.0rc0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.3.0rc0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.3.0rc0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.2.0->tensorflow==1.3.0rc0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.3.0rc0
+2018-04-23 16:16:12.812729: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:16:12.812784: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.3.0rc0:
+  Successfully uninstalled tensorflow-1.3.0rc0
+Collecting tensorflow==1.3.0rc1
+  Using cached https://files.pythonhosted.org/packages/55/af/fc28492b52793bfe175777d08ceea2dc9d8be91d4a338f7579094718676c/tensorflow-1.3.0rc1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: tensorflow-tensorboard in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0rc1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.3.0rc1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.3.0rc1)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0rc1)
+Requirement already satisfied: protobuf>=3.3.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0rc1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.3.0rc1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.3.0rc1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.3.0rc1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.3.0rc1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.3.0->tensorflow==1.3.0rc1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.3.0rc1
+2018-04-23 16:16:43.046390: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:16:43.046443: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.3.0rc1:
+  Successfully uninstalled tensorflow-1.3.0rc1
+Collecting tensorflow==1.3.0rc2
+  Using cached https://files.pythonhosted.org/packages/cc/00/c44869972e206010b90df35a40a960eef8d5965f2439bf6c6dba26e46105/tensorflow-1.3.0rc2-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.3.0rc2)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0rc2)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.3.0rc2)
+Collecting tensorflow-tensorboard<0.2.0,>=0.1.0 (from tensorflow==1.3.0rc2)
+  Using cached https://files.pythonhosted.org/packages/93/31/bb4111c3141d22bd7b2b553a26aa0c1863c86cb723919e5bd7847b3de4fc/tensorflow_tensorboard-0.1.8-py3-none-any.whl
+Requirement already satisfied: protobuf>=3.3.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0rc2)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow==1.3.0rc2)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow==1.3.0rc2)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow==1.3.0rc2)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow==1.3.0rc2)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.3.0->tensorflow==1.3.0rc2)
+Installing collected packages: tensorflow-tensorboard, tensorflow
+  Found existing installation: tensorflow-tensorboard 1.5.1
+    Uninstalling tensorflow-tensorboard-1.5.1:
+      Successfully uninstalled tensorflow-tensorboard-1.5.1
+Successfully installed tensorflow-1.3.0rc2 tensorflow-tensorboard-0.1.8
+2018-04-23 16:17:15.536587: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:17:15.536670: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.3.0rc2:
+  Successfully uninstalled tensorflow-1.3.0rc2
+Collecting tensorflow==1.3.0
+  Using cached https://files.pythonhosted.org/packages/93/73/21358960650c4f86385d0f2afe98fcf99ac393176178b53a07890c195415/tensorflow-1.3.0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.3.0)
+Requirement already satisfied: protobuf>=3.3.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.3.0)
+Requirement already satisfied: numpy>=1.11.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0)
+Requirement already satisfied: tensorflow-tensorboard<0.2.0,>=0.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.3.0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.3.0->tensorflow==1.3.0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow==1.3.0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow==1.3.0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow==1.3.0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow==1.3.0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.3.0
+2018-04-23 16:17:45.871155: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-23 16:17:45.871207: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+Uninstalling tensorflow-1.3.0:
+  Successfully uninstalled tensorflow-1.3.0
+Collecting tensorflow==1.4.0rc0
+  Using cached https://files.pythonhosted.org/packages/04/45/bf332980b5f41c1c2c46a466018372eb7b912053ec161e14231c200c57dd/tensorflow-1.4.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: enum34>=1.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0rc0)
+Collecting tensorflow-tensorboard<0.5.0,>=0.4.0rc1 (from tensorflow==1.4.0rc0)
+  Using cached https://files.pythonhosted.org/packages/e9/9f/5845c18f9df5e7ea638ecf3a272238f0e7671e454faa396b5188c6e6fc0a/tensorflow_tensorboard-0.4.0-py3-none-any.whl
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.4.0rc0)
+Requirement already satisfied: protobuf>=3.3.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0rc0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.4.0rc0)
+Requirement already satisfied: numpy>=1.12.1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0rc0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0rc0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0rc0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0rc0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0rc0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.3.0->tensorflow==1.4.0rc0)
+Installing collected packages: tensorflow-tensorboard, tensorflow
+  Found existing installation: tensorflow-tensorboard 0.1.8
+    Uninstalling tensorflow-tensorboard-0.1.8:
+      Successfully uninstalled tensorflow-tensorboard-0.1.8
+Successfully installed tensorflow-1.4.0rc0 tensorflow-tensorboard-0.4.0
+2018-04-23 16:18:17.519096: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+Uninstalling tensorflow-1.4.0rc0:
+  Successfully uninstalled tensorflow-1.4.0rc0
+Collecting tensorflow==1.4.0rc1
+  Using cached https://files.pythonhosted.org/packages/ae/31/6805bbc0325677f7fa6883cb648dabcb56f76fd838447fd847f615ebf7f8/tensorflow-1.4.0rc1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: tensorflow-tensorboard<0.5.0,>=0.4.0rc1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0rc1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.4.0rc1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.4.0rc1)
+Requirement already satisfied: enum34>=1.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0rc1)
+Requirement already satisfied: protobuf>=3.3.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0rc1)
+Requirement already satisfied: numpy>=1.12.1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0rc1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0rc1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0rc1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0rc1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0rc1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.3.0->tensorflow==1.4.0rc1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.4.0rc1
+2018-04-23 16:18:51.661289: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+Uninstalling tensorflow-1.4.0rc1:
+  Successfully uninstalled tensorflow-1.4.0rc1
+Collecting tensorflow==1.4.0
+  Using cached https://files.pythonhosted.org/packages/a1/74/e2cff4dc2cd2ee7d407bb929ce828eeeb1a43503deae83f8f71f11311970/tensorflow-1.4.0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: tensorflow-tensorboard<0.5.0,>=0.4.0rc1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0)
+Requirement already satisfied: protobuf>=3.3.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0)
+Requirement already satisfied: enum34>=1.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.4.0)
+Requirement already satisfied: numpy>=1.12.1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.4.0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.3.0->tensorflow==1.4.0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.4.0
+2018-04-23 16:19:27.713653: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+Uninstalling tensorflow-1.4.0:
+  Successfully uninstalled tensorflow-1.4.0
+Collecting tensorflow==1.4.1
+  Using cached https://files.pythonhosted.org/packages/dc/de/640ff90d9555d21400abac5bebd2cec8c30015d5247159708291206cef52/tensorflow-1.4.1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: tensorflow-tensorboard<0.5.0,>=0.4.0rc1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.4.1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.4.1)
+Requirement already satisfied: enum34>=1.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.1)
+Requirement already satisfied: protobuf>=3.3.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.1)
+Requirement already satisfied: numpy>=1.12.1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.4.1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<0.5.0,>=0.4.0rc1->tensorflow==1.4.1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.3.0->tensorflow==1.4.1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.4.1
+2018-04-23 16:20:02.296836: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+Uninstalling tensorflow-1.4.1:
+  Successfully uninstalled tensorflow-1.4.1
+Collecting tensorflow==1.5.0rc0
+  Using cached https://files.pythonhosted.org/packages/69/f2/b6084337b718f435e839efee9cd8482d5e3e645ef64088390fef8ebec596/tensorflow-1.5.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: tensorflow-tensorboard in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0rc0)
+Requirement already satisfied: numpy>=1.12.1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0rc0)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0rc0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.5.0rc0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.5.0rc0)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0rc0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.5.0rc0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.5.0rc0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.5.0rc0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.5.0rc0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.5.0rc0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.5.0rc0
+2018-04-23 16:20:37.416444: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+Uninstalling tensorflow-1.5.0rc0:
+  Successfully uninstalled tensorflow-1.5.0rc0
+Collecting tensorflow==1.5.0rc1
+  Using cached https://files.pythonhosted.org/packages/35/e0/4dfd2e69df6d533568cc82bc726677e1e89bc29a5df605232286f3fe1e10/tensorflow-1.5.0rc1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: numpy>=1.12.1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0rc1)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0rc1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.5.0rc1)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0rc1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.5.0rc1)
+Requirement already satisfied: tensorflow-tensorboard in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0rc1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.5.0rc1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.5.0rc1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.5.0rc1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.5.0rc1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard->tensorflow==1.5.0rc1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.5.0rc1
+2018-04-23 16:21:13.641994: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+Uninstalling tensorflow-1.5.0rc1:
+  Successfully uninstalled tensorflow-1.5.0rc1
+Collecting tensorflow==1.5.0
+  Using cached https://files.pythonhosted.org/packages/43/aa/fe3e9d0b48db4adde9781658b9354814b6cdf6acbfeaa7b2677c7b8002d6/tensorflow-1.5.0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.5.0)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.5.0)
+Collecting tensorflow-tensorboard<1.6.0,>=1.5.0 (from tensorflow==1.5.0)
+  Using cached https://files.pythonhosted.org/packages/cc/fa/91c06952517b4f1bc075545b062a4112e30cebe558a6b962816cb33efa27/tensorflow_tensorboard-1.5.1-py3-none-any.whl
+Requirement already satisfied: numpy>=1.12.1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.5.0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.5.0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.5.0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.5.0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.5.0)
+Installing collected packages: tensorflow-tensorboard, tensorflow
+  Found existing installation: tensorflow-tensorboard 0.4.0
+    Uninstalling tensorflow-tensorboard-0.4.0:
+      Successfully uninstalled tensorflow-tensorboard-0.4.0
+Successfully installed tensorflow-1.5.0 tensorflow-tensorboard-1.5.1
+2018-04-23 16:21:52.403430: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+Uninstalling tensorflow-1.5.0:
+  Successfully uninstalled tensorflow-1.5.0
+Collecting tensorflow==1.5.1
+  Using cached https://files.pythonhosted.org/packages/16/13/0c13f3c7f5a78ac5971f15cb59a6fb5997706569f8ace468e45fdab2ce07/tensorflow-1.5.1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: numpy>=1.12.1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.5.1)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.5.1)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.1)
+Requirement already satisfied: tensorflow-tensorboard<1.6.0,>=1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.5.1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.5.1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.5.1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.5.1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.5.1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.5.1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.5.1
+Uninstalling tensorflow-1.5.1:
+  Successfully uninstalled tensorflow-1.5.1
+Collecting tensorflow==1.6.0rc0
+  Using cached https://files.pythonhosted.org/packages/a3/f0/ed96050e81de759d21f8e9adc301ca5f357100b991af23cc9a0053bfd5c2/tensorflow-1.6.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: numpy>=1.12.1 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: tensorflow-tensorboard<1.6.0,>=1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.6.0rc0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.6.0rc0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.6.0rc0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.6.0rc0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorflow-tensorboard<1.6.0,>=1.5.0->tensorflow==1.6.0rc0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.6.0rc0
+Uninstalling tensorflow-1.6.0rc0:
+  Successfully uninstalled tensorflow-1.6.0rc0
+Collecting tensorflow==1.6.0rc1
+  Using cached https://files.pythonhosted.org/packages/64/52/9555050068f1f7a95a60ec8bc1fd0f4eb69c053b58d22e58714e3d0811b5/tensorflow-1.6.0rc1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc1)
+Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.6.0rc1)
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc1)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc1)
+Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc1)
+Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc1)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0rc1)
+Collecting tensorboard<1.7.0,>=1.6.0 (from tensorflow==1.6.0rc1)
+  Using cached https://files.pythonhosted.org/packages/b0/67/a8c91665987d359211dcdca5c8b2a7c1e0876eb0702a4383c1e4ff76228d/tensorboard-1.6.0-py3-none-any.whl
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.6.0rc1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.6.0rc1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.6.0rc1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.6.0rc1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.6.0rc1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.6.0rc1)
+Installing collected packages: tensorboard, tensorflow
+  Found existing installation: tensorboard 1.7.0
+    Uninstalling tensorboard-1.7.0:
+      Successfully uninstalled tensorboard-1.7.0
+Successfully installed tensorboard-1.6.0 tensorflow-1.6.0rc1
+Uninstalling tensorflow-1.6.0rc1:
+  Successfully uninstalled tensorflow-1.6.0rc1
+Collecting tensorflow==1.6.0
+  Using cached https://files.pythonhosted.org/packages/ba/12/e4266266712053b6e74057c123d10913f422059d4265c82a43e85766aa65/tensorflow-1.6.0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: tensorboard<1.7.0,>=1.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.6.0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.6.0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.6.0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.6.0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.6.0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.6.0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.6.0
+Uninstalling tensorflow-1.6.0:
+  Successfully uninstalled tensorflow-1.6.0
+Collecting tensorflow==1.7.0rc0
+  Using cached https://files.pythonhosted.org/packages/7e/51/5004679e418a995767ecc4e51eb87834f3046866c59d5ea1d72dd4e1f7a1/tensorflow-1.7.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: tensorboard<1.7.0,>=1.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.7.0rc0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.7.0rc0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.7.0rc0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.7.0rc0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.7.0rc0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.7.0rc0
+Uninstalling tensorflow-1.7.0rc0:
+  Successfully uninstalled tensorflow-1.7.0rc0
+Collecting tensorflow==1.7.0rc1
+  Using cached https://files.pythonhosted.org/packages/dd/ed/9e6c6c16ff50be054277438669542555a166ed9f95a0dcaacff24fd3153a/tensorflow-1.7.0rc1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: tensorboard<1.7.0,>=1.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0rc1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.7.0rc1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.7.0rc1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.7.0rc1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.7.0rc1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow==1.7.0rc1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.7.0rc1
+Uninstalling tensorflow-1.7.0rc1:
+  Successfully uninstalled tensorflow-1.7.0rc1
+Collecting tensorflow==1.7.0
+  Using cached https://files.pythonhosted.org/packages/e9/f2/85074ef76215435df20424d844ec816428750add61109865706a6bf808c6/tensorflow-1.7.0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.7.0)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0)
+Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0)
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0)
+Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0)
+Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0)
+Collecting tensorboard<1.8.0,>=1.7.0 (from tensorflow==1.7.0)
+  Using cached https://files.pythonhosted.org/packages/0b/ec/65d4e8410038ca2a78c09034094403d231228d0ddcae7d470b223456e55d/tensorboard-1.7.0-py3-none-any.whl
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.7.0)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.7.0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.7.0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.7.0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.7.0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.7.0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.7.0)
+Installing collected packages: tensorboard, tensorflow
+  Found existing installation: tensorboard 1.6.0
+    Uninstalling tensorboard-1.6.0:
+      Successfully uninstalled tensorboard-1.6.0
+Successfully installed tensorboard-1.7.0 tensorflow-1.7.0
+Uninstalling tensorflow-1.7.0:
+  Successfully uninstalled tensorflow-1.7.0
+Collecting tensorflow==1.8.0rc0
+  Using cached https://files.pythonhosted.org/packages/94/26/9dbb4b1d3bf74687682df847e9ecdde2f209c2dc577269c5a5d48920e4e8/tensorflow-1.8.0rc0-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: tensorboard<1.8.0,>=1.7.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc0)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.8.0rc0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.8.0rc0)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.8.0rc0)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.8.0rc0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.8.0rc0)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.8.0rc0
+2018-04-23 16:26:53.986354: F tensorflow/core/platform/cpu_feature_guard.cc:36] The TensorFlow library was compiled to use AVX instructions, but these aren't available on your machine.
+Uninstalling tensorflow-1.8.0rc0:
+  Successfully uninstalled tensorflow-1.8.0rc0
+Collecting tensorflow==1.8.0rc1
+  Using cached https://files.pythonhosted.org/packages/d7/5b/febf4547c2b6f5aafbe684c9f53495f14eb18389589b3e13625262fb6212/tensorflow-1.8.0rc1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python3/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: tensorboard<1.8.0,>=1.7.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.5/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow==1.8.0rc1)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.8.0rc1)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.8.0rc1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.8.0rc1)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.5/dist-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow==1.8.0rc1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from protobuf>=3.4.0->tensorflow==1.8.0rc1)
+Installing collected packages: tensorflow
+Successfully installed tensorflow-1.8.0rc1
+2018-04-23 16:27:36.612301: F tensorflow/core/platform/cpu_feature_guard.cc:36] The TensorFlow library was compiled to use AVX instructions, but these aren't available on your machine.
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==0.12.0rc0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==0.12.0rc1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==0.12.0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==0.12.1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.0.0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.0.1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.1.0rc0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.1.0rc1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.1.0rc2\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.1.0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.2.0rc0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.2.0rc1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.2.0rc2\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.2.0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.2.1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.3.0rc0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.3.0rc1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.3.0rc2\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.3.0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.4.0rc0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.4.0rc1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.4.0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.4.1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.5.0rc0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.5.0rc1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.5.0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.5.1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: -4
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.6.0rc0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: -4
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.6.0rc1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: -4
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.6.0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: -4
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.7.0rc0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: -4
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.7.0rc1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: -4
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.7.0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: -4
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.8.0rc0\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: -6
+
+
+['sudo', 'pip3', 'uninstall', '-y', 'tensorflow']:
+
+Return code: 0
+
+
+['sudo', 'pip3', 'install', 'tensorflow==1.8.0rc1\n']:
+
+Return code: 0
+
+
+./verify_install.py:
+
+Return code: -6
+

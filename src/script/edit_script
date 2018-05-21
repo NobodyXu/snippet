@@ -1,0 +1,5 @@
+#!/bin/bash
+# @ $1 the file name
+chmod 755 $1
+vim $1
+chmod 555 $1

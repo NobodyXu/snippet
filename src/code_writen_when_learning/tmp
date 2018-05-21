@@ -1,0 +1,45 @@
+
+/*
+    auto operator + () const noexcept { return *this; }
+    auto operator - () const noexcept { return self{0} - *this; }
+
+    self operator ~ () const noexcept { return {~obj}; }
+
+    auto operator << (const std::size_t &b) const noexcept { return self{*this} <<= b; }
+    auto operator >> (const std::size_t &b) const noexcept { return self{*this} >>= b; }
+# define DEF_ASSIGN(OP)                                  \
+    auto& operator OP ## = (const self &other) noexcept {\
+        obj OP ## = other.obj;                           \
+        return *this;                                    \
+    }
+
+    DEF_ASSIGN(+)
+    DEF_ASSIGN(-)
+    DEF_ASSIGN(*)
+    DEF_ASSIGN(/)
+    DEF_ASSIGN(%)
+    DEF_ASSIGN(&)
+    DEF_ASSIGN(|)
+    DEF_ASSIGN(^)
+# undef  DEF_ASSIGN
+
+    auto& operator <<= (const std::size_t &b) noexcept {
+        obj <<= b;
+        return *this;
+    }
+    auto& operator >>= (const std::size_t &b) noexcept {
+        obj >>= b;
+        return *this;
+    }
+public:
+    /*
+     * Unbox when nesscery:
+     *  1. When a function only accept unboxed value;
+     *  2. When using relational operators.
+     */
+    operator auto () const noexcept { return obj; }
+
+    operator bool () const noexcept { return bool{obj}; }
+    template <class _T>
+    operator wrapper<_T> () const noexcept { return {_T{obj}; }
+*/

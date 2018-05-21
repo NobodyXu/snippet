@@ -1,0 +1,4 @@
+#!/home/nobodyxu/.cargo/bin/ion
+while test 1 -eq 1
+    continue
+end

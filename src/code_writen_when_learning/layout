@@ -1,0 +1,276 @@
+
+*** Dumping AST Record Layout
+         0 | struct Empty (empty)
+           | [sizeof=1, dsize=1, align=1,
+           |  nvsize=1, nvalign=1]
+
+*** Dumping AST Record Layout
+         0 | struct B1
+         0 |   int i
+           | [sizeof=4, dsize=4, align=4,
+           |  nvsize=4, nvalign=4]
+
+*** Dumping AST Record Layout
+         0 | struct D1
+         0 |   (D1 vtable pointer)
+         0 |   struct Empty (virtual base) (empty)
+         8 |   struct B1 (virtual base)
+         8 |     int i
+           | [sizeof=16, dsize=12, align=8,
+           |  nvsize=8, nvalign=8]
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x66f6840[0m <[0;33mvirtual_inheritence.cc:3:1[0m, [0;33mcol:20[0m> [0;33mcol:8[0m referenced struct[0;1;36m B1[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m pass_in_registers aggregate standard_layout trivially_copyable pod trivial literal
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists trivial
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x66f6968[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m B1[0m
+[0;34m|-[0m[0;1;32mFieldDecl[0m[0;33m 0x66f6a18[0m <[0;33mcol:13[0m, [0;33mcol:17[0m> [0;33mcol:17[0m[0;1;36m i[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x67278b8[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m operator=[0m [0;32m'B1 &(const B1 &)'[0m inline default trivial noexcept-unevaluated 0x67278b8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x67279e0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const B1 &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x6727a78[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m operator=[0m [0;32m'B1 &(B1 &&)'[0m inline default trivial noexcept-unevaluated 0x6727a78
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6727ba0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'B1 &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x6727fc8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~B1[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x6727fc8
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6729078[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used[0;1;36m B1[0m [0;32m'void () noexcept'[0m inline default trivial
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x6729bd8[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6729648[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m B1[0m [0;32m'void (const B1 &)'[0m inline default trivial noexcept-unevaluated 0x6729648
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6729780[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const B1 &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x67297e8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m B1[0m [0;32m'void (B1 &&)'[0m inline default trivial noexcept-unevaluated 0x67297e8
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6729920[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'B1 &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.B1 = type { i32 }
+  NonVirtualBaseLLVMType:%struct.B1 = type { i32 }
+  IsZeroInitializable:1
+  BitFields:[
+]>
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x66f7388[0m <[0;33mvirtual_inheritence.cc:5:1[0m, [0;33mcol:39[0m> [0;33mcol:8[0m struct[0;1;36m D1[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists non_trivial
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple non_trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple non_trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0mvirtual public [0;32m'Empty'[0m
+[0;34m|-[0mvirtual public [0;32m'B1'[0m
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x6727220[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m D1[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x6727318[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'D1 &(const D1 &)'[0m inline default noexcept-unevaluated 0x6727318
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6727440[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const D1 &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x6727c38[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'D1 &(D1 &&)'[0m inline default noexcept-unevaluated 0x6727c38
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6727d60[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'D1 &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x6727de8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~D1[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x6727de8
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6728e60[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used[0;1;36m D1[0m [0;32m'void () noexcept'[0m inline default
+[0;34m| |-[0mCXXCtorInitializer [0;32m'Empty'[0m
+[0;34m| | `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x6729b70[0m <[0;33mcol:8[0m> [0;32m'Empty'[0m[0;36m[0m[0;36m[0m [0;32m'void () noexcept'[0m
+[0;34m| |-[0mCXXCtorInitializer [0;32m'B1'[0m
+[0;34m| | `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x6729be8[0m <[0;33mcol:8[0m> [0;32m'B1'[0m[0;36m[0m[0;36m[0m [0;32m'void () noexcept'[0m
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x6729c60[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6729168[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m D1[0m [0;32m'void (const D1 &)'[0m inline default noexcept-unevaluated 0x6729168
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x67292a0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const D1 &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6729988[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m D1[0m [0;32m'void (D1 &&)'[0m inline default noexcept-unevaluated 0x6729988
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6729ac0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'D1 &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.D1 = type { i32 (...)**, %struct.B1 }
+  NonVirtualBaseLLVMType:%struct.D1.base = type { i32 (...)** }
+  IsZeroInitializable:1
+  BitFields:[
+]>
+
+*** Dumping AST Record Layout
+         0 | struct B2
+         0 |   (B2 vtable pointer)
+           | [sizeof=8, dsize=8, align=8,
+           |  nvsize=8, nvalign=8]
+
+*** Dumping AST Record Layout
+         0 | struct D2
+         0 |   struct Empty (virtual base) (empty)
+         0 |   struct B2 (primary virtual base)
+         0 |     (B2 vtable pointer)
+           | [sizeof=8, dsize=8, align=8,
+           |  nvsize=8, nvalign=8]
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x66f6a80[0m <[0;33mvirtual_inheritence.cc:4:1[0m, [0;33mcol:22[0m> [0;33mcol:8[0m referenced struct[0;1;36m B2[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m polymorphic literal has_constexpr_non_copy_move_ctor can_const_default_init
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists non_trivial constexpr defaulted_is_constexpr
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple non_trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple non_trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x66f6ba8[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m B2[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x66f6cc8[0m <[0;33mline:1:21[0m, [0;33mcol:79[0m> [0;33mline:4:19[0m[0;1;36m F[0m [0;32m'const char *()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x66f7370[0m <[0;33mline:1:49[0m, [0;33mcol:79[0m>
+[0;34m|   `-[0m[0;1;35mReturnStmt[0m[0;33m 0x66f7358[0m <[0;33mcol:51[0m, [0;33mcol:58[0m>
+[0;34m|     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x66f7340[0m <[0;33mcol:58[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m|       `-[0m[0;1;35mPredefinedExpr[0m[0;33m 0x66f7320[0m <[0;33mcol:58[0m> [0;32m'const char [28]'[0m[0;36m lvalue[0m[0;36m[0m __PRETTY_FUNCTION__
+[0;34m|         `-[0m[0;1;35mStringLiteral[0m[0;33m 0x66f72d8[0m <[0;33mcol:58[0m> [0;32m'const char [28]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "virtual const char *B2::F()"[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x66f6dc8[0m <[0;33mline:4:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m operator=[0m [0;32m'B2 &(const B2 &)'[0m inline default noexcept-unevaluated 0x66f6dc8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x66f6ef0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const B2 &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x66f6f88[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m operator=[0m [0;32m'B2 &(B2 &&)'[0m inline default noexcept-unevaluated 0x66f6f88
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x66f70b0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'B2 &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x66f7138[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~B2[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x66f7138
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x672c4c8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used constexpr[0;1;36m B2[0m [0;32m'void () noexcept'[0m inline default
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x67329a0[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x672c758[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m B2[0m [0;32m'void (const B2 &)'[0m inline default noexcept-unevaluated 0x672c758
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x672c890[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const B2 &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x672c8f8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m B2[0m [0;32m'void (B2 &&)'[0m inline default noexcept-unevaluated 0x672c8f8
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x672ca30[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'B2 &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.B2 = type { i32 (...)** }
+  NonVirtualBaseLLVMType:%struct.B2 = type { i32 (...)** }
+  IsZeroInitializable:1
+  BitFields:[
+]>
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x672bb88[0m <[0;33mvirtual_inheritence.cc:6:1[0m, [0;33mcol:39[0m> [0;33mcol:8[0m struct[0;1;36m D2[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m polymorphic can_const_default_init
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists non_trivial
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple non_trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple non_trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0mvirtual public [0;32m'Empty'[0m
+[0;34m|-[0mvirtual public [0;32m'B2'[0m
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x672bd58[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m D2[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x672be48[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'D2 &(const D2 &)'[0m inline default noexcept-unevaluated 0x672be48
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x672bf70[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const D2 &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x672c008[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'D2 &(D2 &&)'[0m inline default noexcept-unevaluated 0x672c008
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x672c130[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'D2 &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x672c1b8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~D2[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x672c1b8
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x672c3c0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used[0;1;36m D2[0m [0;32m'void () noexcept'[0m inline default
+[0;34m| |-[0mCXXCtorInitializer [0;32m'Empty'[0m
+[0;34m| | `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x6732938[0m <[0;33mcol:8[0m> [0;32m'Empty'[0m[0;36m[0m[0;36m[0m [0;32m'void () noexcept'[0m
+[0;34m| |-[0mCXXCtorInitializer [0;32m'B2'[0m
+[0;34m| | `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x67329b0[0m <[0;33mcol:8[0m> [0;32m'B2'[0m[0;36m[0m[0;36m[0m [0;32m'void () noexcept'[0m
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x6732a28[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x672c5b8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m D2[0m [0;32m'void (const D2 &)'[0m inline default noexcept-unevaluated 0x672c5b8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x672c6f0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const D2 &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x67327a0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m D2[0m [0;32m'void (D2 &&)'[0m inline default noexcept-unevaluated 0x67327a0
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x67328d0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'D2 &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.D2 = type { %struct.B2 }
+  NonVirtualBaseLLVMType:%struct.D2 = type { %struct.B2 }
+  IsZeroInitializable:1
+  BitFields:[
+]>
+
+*** Dumping AST Record Layout
+         0 | struct D3
+         0 |   (D3 vtable pointer)
+         0 |   struct Empty (virtual base) (empty)
+           | [sizeof=8, dsize=8, align=8,
+           |  nvsize=8, nvalign=8]
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x6732c58[0m <[0;33mvirtual_inheritence.cc:7:1[0m, [0;33mcol:27[0m> [0;33mcol:8[0m struct[0;1;36m D3[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m can_const_default_init
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists non_trivial
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple non_trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple non_trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0mvirtual public [0;32m'Empty'[0m
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x6732dd0[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m D3[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x6732ec8[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'D3 &(const D3 &)'[0m inline default noexcept-unevaluated 0x6732ec8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6732ff0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const D3 &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x6733088[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'D3 &(D3 &&)'[0m inline default noexcept-unevaluated 0x6733088
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x67331b0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'D3 &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x6733238[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~D3[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x6733238
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6733440[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used[0;1;36m D3[0m [0;32m'void () noexcept'[0m inline default
+[0;34m| |-[0mCXXCtorInitializer [0;32m'Empty'[0m
+[0;34m| | `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x67364e8[0m <[0;33mcol:8[0m> [0;32m'Empty'[0m[0;36m[0m[0;36m[0m [0;32m'void () noexcept'[0m
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x6736558[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6733528[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m D3[0m [0;32m'void (const D3 &)'[0m inline default noexcept-unevaluated 0x6733528
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6733660[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const D3 &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x67336c8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m D3[0m [0;32m'void (D3 &&)'[0m inline default noexcept-unevaluated 0x67336c8
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6736480[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'D3 &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.D3 = type { i32 (...)** }
+  NonVirtualBaseLLVMType:%struct.D3 = type { i32 (...)** }
+  IsZeroInitializable:1
+  BitFields:[
+]>
+
+*** Dumping AST Record Layout
+         0 | struct D4
+         0 |   struct B2 (primary virtual base)
+         0 |     (B2 vtable pointer)
+           | [sizeof=8, dsize=8, align=8,
+           |  nvsize=8, nvalign=8]
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x67366d8[0m <[0;33mvirtual_inheritence.cc:8:1[0m, [0;33mcol:24[0m> [0;33mcol:8[0m struct[0;1;36m D4[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m polymorphic can_const_default_init
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists non_trivial
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple non_trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple non_trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0mvirtual public [0;32m'B2'[0m
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x6736850[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m D4[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x6736948[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'D4 &(const D4 &)'[0m inline default noexcept-unevaluated 0x6736948
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6736a70[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const D4 &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x6736b08[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'D4 &(D4 &&)'[0m inline default noexcept-unevaluated 0x6736b08
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6736c30[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'D4 &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x6736cb8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~D4[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x6736cb8
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6736ec0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used[0;1;36m D4[0m [0;32m'void () noexcept'[0m inline default
+[0;34m| |-[0mCXXCtorInitializer [0;32m'B2'[0m
+[0;34m| | `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x67372e8[0m <[0;33mcol:8[0m> [0;32m'B2'[0m[0;36m[0m[0;36m[0m [0;32m'void () noexcept'[0m
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x6737358[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6736fa8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m D4[0m [0;32m'void (const D4 &)'[0m inline default noexcept-unevaluated 0x6736fa8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x67370e0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const D4 &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6737148[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m D4[0m [0;32m'void (D4 &&)'[0m inline default noexcept-unevaluated 0x6737148
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6737280[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'D4 &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.D4 = type { %struct.B2 }
+  NonVirtualBaseLLVMType:%struct.D4 = type { %struct.B2 }
+  IsZeroInitializable:1
+  BitFields:[
+]>
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x66f6660[0m <[0;33mvirtual_inheritence.cc:2:1[0m, [0;33mcol:15[0m> [0;33mcol:8[0m referenced struct[0;1;36m Empty[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m pass_in_registers empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists trivial constexpr defaulted_is_constexpr
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x66f6788[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m Empty[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x6727508[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m operator=[0m [0;32m'Empty &(const Empty &)'[0m inline default trivial noexcept-unevaluated 0x6727508
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6727630[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const Empty &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x67276c8[0m <[0;33mcol:8[0m, [0;33m<invalid sloc>[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m operator=[0m [0;32m'Empty &(Empty &&)'[0m inline default trivial noexcept-unevaluated 0x67276c8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x67277f0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'Empty &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x6727ed8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~Empty[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x6727ed8
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6728f68[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used constexpr[0;1;36m Empty[0m [0;32m'void () noexcept'[0m inline default trivial
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x6729b60[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6729308[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m Empty[0m [0;32m'void (const Empty &)'[0m inline default trivial noexcept-unevaluated 0x6729308
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6729440[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const Empty &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x67294a8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m Empty[0m [0;32m'void (Empty &&)'[0m inline default trivial noexcept-unevaluated 0x67294a8
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x67295e0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'Empty &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.Empty = type { i8 }
+  NonVirtualBaseLLVMType:%struct.Empty = type { i8 }
+  IsZeroInitializable:1
+  BitFields:[
+]>

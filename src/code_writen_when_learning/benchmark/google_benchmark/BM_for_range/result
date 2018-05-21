@@ -1,0 +1,21 @@
+    -------------------------------------------------------------------
+    Benchmark                            Time           CPU Iterations
+    -------------------------------------------------------------------
+    BM_for_range<v1>/64                929 ns        932 ns     763881
+    BM_for_range<v1>/512              1051 ns       1053 ns     662887
+    BM_for_range<v1>/4096             2195 ns       2199 ns     317788
+    BM_for_range<v1>/32768           12484 ns      12509 ns      57699
+    BM_for_range<v1>/262144         114788 ns     114784 ns       6277
+    BM_for_range<v1>/2097152       1270037 ns    1269506 ns        554
+    BM_for_range<v1>/16777216     16472508 ns   16468972 ns         43
+    BM_for_range<v1>/134217728   130165013 ns  130136049 ns          5
+    BM_for_range<v1>/1073741824  986169581 ns  986168129 ns          1
+    BM_for_range<v2>/64                925 ns        927 ns     730624
+    BM_for_range<v2>/512              1060 ns       1062 ns     654477
+    BM_for_range<v2>/4096             2197 ns       2201 ns     319264
+    BM_for_range<v2>/32768           12288 ns      12314 ns      53352
+    BM_for_range<v2>/262144         112196 ns     112191 ns       6220
+    BM_for_range<v2>/2097152       1268441 ns    1267732 ns        553
+    BM_for_range<v2>/16777216     16627461 ns   16623624 ns         42
+    BM_for_range<v2>/134217728   127552348 ns  127551465 ns          6
+    BM_for_range<v2>/1073741824  963751205 ns  963152928 ns          1

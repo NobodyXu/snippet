@@ -1,0 +1,1 @@
+    calln   <printf@plt>	;
