@@ -20,6 +20,5 @@ invoke_cmake_to_configure
     -DLLVM_INSTALL_BINUTILS_SYMLINKS=True		\
     -DLLVM_INSTALL_UTILS=True				\
     -DLLVM_PARALLEL_COMPILE_JOBS="10"			\
-    -DLLVM_PARALLEL_LINK_JOBS="3"			\
-    -DCPACK_BINARY_DEB=True				\
-    -G "Ninja"
+    -DLLVM_PARALLEL_LINK_JOBS="4"			\
+    ${@:2:22222}
