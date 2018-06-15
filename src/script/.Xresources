@@ -1,0 +1,4 @@
+URxvt.background: #002b36
+URxvt.foreground: white
+URxvt.jumpScroll: True
+URxvt.scrollBar: False

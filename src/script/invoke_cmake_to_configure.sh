@@ -2,7 +2,7 @@
 CC=clang-5.0
 CXX=clang++-5.0
 
-C_FLAGS="-Ofast -Oz -pipe -flto=thin"
+C_FLAGS="-Ofast -pipe -flto=thin"
 CXX_FLAGS="$C_FLAGS -fstrict-enums -fstrict-vtable-pointers"
 
 build_dir="$PWD/$1"

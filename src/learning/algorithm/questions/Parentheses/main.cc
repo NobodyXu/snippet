@@ -17,34 +17,28 @@ auto readall(std::istream &in) {
     return ss.str();
 }
 
-auto find_endof_left_parentheses(char *beg, char *end) noexcept {
-    int i;
-    return std::find_if(beg, end, [&ret = i](const char &c) {
-        ret = 0;
-        switch (c) {
-            default:
-                ret = -1;
-            case '[':
-            case '(':
-            case '{': ;
-        }
-
-        return ret;
-    });
+[[gnu::noinline]] auto find_endof_left_parentheses(char *beg, char *end) noexcept {
+    do {
+        if (*beg != '[' && *beg != '(' && *beg != '{')
+            break;
+        ++beg;
+    } while(beg != end);
+    return beg;
 }
-void convert_left_parentheses_into_right_ones(char *beg, char *endof_left_parentheses) noexcept {
-    std::for_each(beg, endof_left_parentheses, [](char &c) {
+[[gnu::noinline]] void convert_left_parentheses_into_right_ones(char *beg, char *end) noexcept {
+    std::for_each(beg, end, [](char &c) {
+        char add = 2;
         if (c == '(')
-            c -= 1;
-        c += 2;
+            add -= 1;
+        c += add;
     });
 }
-auto detect_and_convert_left_parentheses_into_right_ones(char *beg, char *end) noexcept {
+[[gnu::noinline]] auto detect_and_convert_left_parentheses_into_right_ones(char *beg, char *end) noexcept {
     auto endof_left_parentheses = find_endof_left_parentheses(beg, end);
     convert_left_parentheses_into_right_ones(beg, endof_left_parentheses);
     return endof_left_parentheses;
 }
-auto match_converted_left_parentheses_with_right_ones(char *begof_left, const std::size_t sizeof_left, char *begof_right, const std::size_t sizeof_right) noexcept {
+[[gnu::noinline]] auto match_converted_left_parentheses_with_right_ones(char *begof_left, const std::size_t sizeof_left, char *begof_right, const std::size_t sizeof_right) noexcept {
     bool ret;
     if (!sizeof_left || sizeof_left > sizeof_right)
         ret = 0;
