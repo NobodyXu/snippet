@@ -4,4 +4,5 @@ union u {
 };
 int main() {
     int u::* p;
+    short u::* p2;
 }
