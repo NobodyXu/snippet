@@ -1,6 +1,7 @@
 #ifndef __nobodyxu_wheels_indirected_graph_api_HPP__
 # define __nobodyxu_wheels_indirected_graph_api_HPP__
 
+# include <cassert>
 # include "../edge.hpp"
 
 namespace nxwheels {
