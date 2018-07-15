@@ -6,5 +6,6 @@ template <class Index_t>
 struct edge {
     Index_t beg, end;
 };
+template <class T> edge(T) -> edge<T>;
 } /* nxwheels */
 #endif
