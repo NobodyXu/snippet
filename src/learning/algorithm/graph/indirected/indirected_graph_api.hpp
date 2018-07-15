@@ -31,6 +31,7 @@ struct indirected_graph_api {
         if(e == 0)
             return;
         assert(e <= (v - 1) * (v - 1));
+        get_Derived()->set_edges(e);
 
         clear();
         addVertex(v);
@@ -38,7 +39,7 @@ struct indirected_graph_api {
         for(Index_t i = 0; i != e; ++i) {
             in >> v1 >> v2;
 
-            addEdge(edge{v1, v2});
+            get_Derived()->_addEdge(edge{v1, v2});
         }
     }
     template <class Stream>
