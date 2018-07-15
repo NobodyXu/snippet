@@ -14,12 +14,11 @@ struct indirected_graph_api {
      * indirected_graph(InputStreamrange &&range);
      */
     using Index_t = typename Derived::Index_t;
-    using RangeOfAdjacentVertexs = typename Derived::RangeOfAdjacentVertexs;
     using edge = edge<Index_t>;
 
     constexpr auto V() const noexcept -> Index_t { return get_Derived()->V(); }
     constexpr auto E() const noexcept -> Index_t { return get_Derived()->E(); }
-    constexpr auto adj(Index_t index) -> RangeOfAdjacentVertexs { return get_Derived()->adj(index); }
+    constexpr auto adj(Index_t index) { return get_Derived()->adj(index); }
 
     template <class Stream>
     constexpr void fromStream(Stream &&in) {
