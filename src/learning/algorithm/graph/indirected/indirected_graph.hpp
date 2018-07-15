@@ -42,6 +42,7 @@ struct indirected_graph: indirected_graph_api<indirected_graph, boost::uint64_t>
 protected:
     void _addEdge(const edge &e) {
         VertexVector[e.beg].push_back(e.end);
+        VertexVector[e.end].push_back(e.beg);
     }
     constexpr void set_edges(Index_t _edges) noexcept { edges = _edges; }
 
