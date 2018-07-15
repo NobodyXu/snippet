@@ -12,8 +12,8 @@ struct indirected_graph_api {
      * indirected_graph(const indirected_graph&) = default;
      * indirected_graph(indirected_graph&&) = default;
      *
-     * auto& operator = (const indirected_graph&) = default;
-     * auto& operator = (indirected_graph&&) = default;
+     * indirected_graph& operator = (const indirected_graph&) = default;
+     * indirected_graph& operator = (indirected_graph&&) = default;
      */
     using Index_t = _Index_t;
     using edge = edge<Index_t>;
