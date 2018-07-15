@@ -1,19 +1,21 @@
 #ifndef __nobodyxu_wheels_indirected_graph_api_HPP__
 # define __nobodyxu_wheels_indirected_graph_api_HPP__
 
-# include <cassert>
 # include "../edge.hpp"
 
 namespace nxwheels {
-template <class Derived>
+template <class Derived, class _Index_t>
 struct indirected_graph_api {
     /*
-     * indirected_graph(int Vertex);
+     * indirected_graph() = default;
      *
-     * template <class InputStreamRange>
-     * indirected_graph(InputStreamrange &&range);
+     * indirected_graph(const indirected_graph&) = default;
+     * indirected_graph(indirected_graph&&) = default;
+     *
+     * auto& operator = (const indirected_graph&) = default;
+     * auto& operator = (indirected_graph&&) = default;
      */
-    using Index_t = typename Derived::Index_t;
+    using Index_t = _Index_t;
     using edge = edge<Index_t>;
 
     constexpr auto V() const noexcept -> Index_t { return get_Derived()->V(); }
