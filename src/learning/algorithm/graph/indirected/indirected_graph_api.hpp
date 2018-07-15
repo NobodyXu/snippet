@@ -54,7 +54,8 @@ struct indirected_graph_api {
 
         for(Index_t i{0}; i != Vertexs; ++i)
             for(const auto &end: adj(i))
-                out << i << end;
+                if (end >= i)
+                    out << i << end;
     }
 
     constexpr void addVertex(const Index_t &index = Index_t{1}) { get_Derived()->addVertex(index); }
