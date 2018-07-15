@@ -21,7 +21,8 @@ struct indirected_graph_api {
 
     constexpr auto V() const noexcept -> Index_t { return get_Derived()->V(); }
     constexpr auto E() const noexcept -> Index_t { return get_Derived()->E(); }
-    constexpr auto adj(Index_t index) { return get_Derived()->adj(index); }
+    constexpr decltype(auto) adj(Index_t index) { return get_Derived()->adj(index); }
+    constexpr decltype(auto) adj(Index_t index) const { return get_Derived()->adj(index); }
 
     template <class Stream>
     constexpr void fromStream(Stream &&in) {
