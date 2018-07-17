@@ -48,8 +48,8 @@ struct UF_impl1: UF_api<Int, Derived, Content> {
         _id.reserve(oldsize + n);
 
         Int i = oldsize;
-        for(auto beg = _id.begin() + oldsize, end = _id.end(); beg != end; ++beg, ++i)
-            _id.push_back(i);
+        while (i != oldsize + n)
+            _id.push_back(i++);
 
         count += n;
     }
