@@ -4,7 +4,7 @@
 # include <vector>
 
 namespace nxwheels::dyn_union {
-template <class Int, class Derived>
+template <class Int, class Derived, class Content = Int>
 struct UF_api {
     UF_api() = default;
 
@@ -48,7 +48,7 @@ struct UF_api {
 
 protected:
     Int count{0};
-    std::vector<Int> Nodes;
+    std::vector<Content> Nodes;
 private:
     auto* get_Derived() noexcept { return static_cast<Derived*>(this); }
     auto* get_Derived() const noexcept { return static_cast<const Derived*>(this); }
