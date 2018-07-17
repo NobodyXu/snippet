@@ -49,7 +49,7 @@ struct UF_impl1: UF_api<Int, Derived, Content> {
 
         Int i = oldsize;
         while (i != oldsize + n)
-            _id.push_back(i++);
+            _id.emplace_back(i++);
 
         count += n;
     }
