@@ -3,7 +3,7 @@
 
 # include <vector>
 
-namespace nxwheels::dyn_union {
+namespace nxwheels::dyn_conn {
 template <class Int, class Derived, class Content = Int>
 struct UF_api {
     UF_api() = default;
@@ -60,5 +60,5 @@ protected:
     Int count{0};
     std::vector<Content> _id;
 };
-} /* nxwheels::dyn_union */
+} /* nxwheels::dyn_conn */
 #endif

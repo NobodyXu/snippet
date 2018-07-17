@@ -1,9 +1,9 @@
-#ifndef __nobodyxu_wheels_dynamic_connectivity_quick_find_UF_HPP__
-# define __nobodyxu_wheels_dynamic_connectivity_quick_find_UF_HPP__
+#ifndef __nobodyxu_wheels_dynamic_connectivity_QuickFind_UF_HPP__
+# define __nobodyxu_wheels_dynamic_connectivity_QuickFind_UF_HPP__
 
 # include "UF_api.hpp"
 
-namespace nxwheels::dyn_union {
+namespace nxwheels::dyn_conn {
 template <class Int>
 struct QF_UF: UF_impl1<Int, QF_UF<Int>> {
     using base = UF_impl1<Int, QF_UF<Int>>;
@@ -20,5 +20,5 @@ struct QF_UF: UF_impl1<Int, QF_UF<Int>> {
     }
     void findRoot(Int p) const noexcept { return base::_id[p]; }
 };
-} /* nxwheels::dyn_union */
+} /* nxwheels::dyn_conn */
 #endif
