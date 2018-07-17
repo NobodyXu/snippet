@@ -28,8 +28,8 @@ struct UF_api {
     void clear() noexcept { Nodes.clear(); }
 
     void Union(Int p, Int q) noexcept { get_Derived()->Union(p, q); }
-    Int findRoot(Int p) noexcept { return get_Derived()->findRoot(p); }
-    bool connected(Int p, Int q) noexcept { return findRoot(p) == findRoot(q); }
+    Int findRoot(Int p) const noexcept { return get_Derived()->findRoot(p); }
+    bool connected(Int p, Int q) const noexcept { return findRoot(p) == findRoot(q); }
     Int Count() const noexcept { return count; }
 
     template <class Stream>
