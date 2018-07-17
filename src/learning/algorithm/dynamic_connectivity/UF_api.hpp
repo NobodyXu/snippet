@@ -14,23 +14,13 @@ struct UF_api {
     UF_api& operator = (const UF_api&) = default;
     UF_api& operator = (UF_api&&) = default;
 
-    void size() const noexcept { return Nodes.size(); }
-    void addNodes(Int n) {
-        auto oldsize = size();
-        Nodes.reserve(oldsize + n);
-
-        Int i = oldsize;
-        for(auto beg = Nodes.begin() + oldsize, end = Nodes.end(); beg != end; ++beg, ++i)
-            Nodes.push_back(i);
-
-        count += n;
-    }
-    void clear() noexcept { Nodes.clear(); }
+    auto size() const noexcept { return get_Derived()->size(); }
+    void addId(Int n) { get_Derived()->addId(n); }
+    void clear() noexcept { get_Derived()->clear(); }
 
     void Union(Int p, Int q) noexcept { get_Derived()->Union(p, q); }
     Int findRoot(Int p) const noexcept { return get_Derived()->findRoot(p); }
     bool connected(Int p, Int q) const noexcept { return findRoot(p) == findRoot(q); }
-    Int Count() const noexcept { return count; }
 
     template <class Stream>
     void fromStream(Stream &&in) {
@@ -38,7 +28,7 @@ struct UF_api {
 
         Int N, p, q;
         in >> N;
-        addNodes(N);
+        addId(N);
 
         while(N--) {
             in >> p >> q;
@@ -46,12 +36,29 @@ struct UF_api {
         }
     }
 
-protected:
-    Int count{0};
-    std::vector<Content> Nodes;
 private:
     auto* get_Derived() noexcept { return static_cast<Derived*>(this); }
     auto* get_Derived() const noexcept { return static_cast<const Derived*>(this); }
+};
+template <class Int, class Derived, class Content = Int>
+struct UF_impl1: UF_api<Int, Derived, Content> {
+    auto size() const noexcept { return _id.size(); }
+    void addId(Int n) {
+        auto oldsize = size();
+        _id.reserve(oldsize + n);
+
+        Int i = oldsize;
+        for(auto beg = _id.begin() + oldsize, end = _id.end(); beg != end; ++beg, ++i)
+            _id.push_back(i);
+
+        count += n;
+    }
+    void clear() noexcept { _id.clear(); }
+    Int Count() const noexcept { return count; }
+
+protected:
+    Int count{0};
+    std::vector<Content> _id;
 };
 } /* nxwheels::dyn_union */
 #endif
