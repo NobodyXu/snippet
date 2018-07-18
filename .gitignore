@@ -26,6 +26,9 @@
 *.a
 *.lib
 
+# Assemblies
+*.s
+
 # Executables
 *.exe
 *.out
