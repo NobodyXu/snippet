@@ -42,9 +42,7 @@ struct WQU_UF_v1: UF_impl1<Int, WQU_UF_v1<Int>, ValueWithWeight<Int>> {
         --base::count;
     }
     Int findRoot(Int p) const noexcept {
-        while (base::_id[p].val != p)
-            p = base::_id[p].val;
-        return p;
+        return findRootPair(p).val;
     }
     auto& findRootPair(Int p) const noexcept {
         while (base::_id[p].val != p)
