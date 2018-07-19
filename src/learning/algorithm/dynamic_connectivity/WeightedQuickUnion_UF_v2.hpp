@@ -1,5 +1,5 @@
-#ifndef __nobodyxu_wheels_dynamic_connectivity_WeightedQuickUnionUF_v1_HPP__
-# define __nobodyxu_wheels_dynamic_connectivity_WeightedQuickUnionUF_v1_HPP__
+#ifndef __nobodyxu_wheels_dynamic_connectivity_WeightedQuickUnionUF_v2_HPP__
+# define __nobodyxu_wheels_dynamic_connectivity_WeightedQuickUnionUF_v2_HPP__
 
 # include "UF_api.hpp"
 
