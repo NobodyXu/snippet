@@ -31,11 +31,13 @@ struct WQU_UF_v2: UF_impl1<Int, WQU_UF_v2<Int>, ValueWithWeight<Int>> {
         if (pid == qid)
             return;
 
-        if (pWeight < qWeight) {
+        if (pWeight < qWeight)
             pid = qid;
-        } else {
+        else if (pWeight > qWeight)
             qid = pid;
-            pWeight = pWeight == qWeight ? qWeight + 1 : qWeight;
+        else {
+            qid = pid;
+            ++pWeight;
         }
 
         --base::count;
