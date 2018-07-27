@@ -36,3 +36,6 @@
 
 # Test Data
 *.testdata
+
+# valgrind result file
+*.out.*
