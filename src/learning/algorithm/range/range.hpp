@@ -9,6 +9,6 @@ struct range {
     constexpr auto begin() const noexcept { return _beg; }
     constexpr auto end() const noexcept { return _end; }
 };
-template <class It1, class It2> range(const It1&, const It2&) -> range<const It1&, const It2 &>;
+template <class It1, class It2> range(const It1&, const It2&) -> range<It1, It2>;
 } /* algorithm::range */
 #endif
