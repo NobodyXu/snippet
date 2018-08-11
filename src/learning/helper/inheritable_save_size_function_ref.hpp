@@ -42,9 +42,9 @@ struct inheritable_save_size_function_ref<Ret (Args...)> {
     };
     template <class T>
     class type<callable_t<T, Args...>, false> {
+    public:
         T obj;
 
-    public:
         constexpr decltype(auto) operator () (Args &&...args)       noexcept( noexcept(obj(std::forward<Args>(args)...)) ) {
             return obj(std::forward<Args>(args)...);
         }
