@@ -37,6 +37,9 @@ struct inheritable_save_size_function_ref<Ret (Args...)> {
         constexpr decltype(auto) operator () (Args &&...args) const noexcept( noexcept(fptr(std::forward<Args>(args)...)) ) {
             return fptr(std::forward<Args>(args)...);
         }
+        constexpr decltype(auto) call(Args &&...args) const noexcept( noexcept(fptr(std::forward<Args>(args)...)) ) {
+            return fptr(std::forward<Args>(args)...);
+        }
 
         static auto& get_value() noexcept { return fptr; }
     };
@@ -49,6 +52,12 @@ struct inheritable_save_size_function_ref<Ret (Args...)> {
             return obj(std::forward<Args>(args)...);
         }
         constexpr decltype(auto) operator () (Args &&...args) const noexcept( noexcept(obj(std::forward<Args>(args)...)) ) {
+            return obj(std::forward<Args>(args)...);
+        }
+        constexpr decltype(auto) call(Args &&...args)       noexcept( noexcept(obj(std::forward<Args>(args)...)) ) {
+            return obj(std::forward<Args>(args)...);
+        }
+        constexpr decltype(auto) call(Args &&...args) const noexcept( noexcept(obj(std::forward<Args>(args)...)) ) {
             return obj(std::forward<Args>(args)...);
         }
 
