@@ -34,7 +34,7 @@ struct inheritable_save_size_function_ref<Ret (Args...)> {
         constexpr type(U&&) noexcept {}
 
         inline static auto fptr = impl::get_fptr_for_empty_or_converted_callable_class<T, Ret, Args...>();
-        constexpr decltype(auto) operator () (Args &&...args) const noexcept(fptr(std::forward<Args>(args)...)) {
+        constexpr decltype(auto) operator () (Args &&...args) const noexcept( noexcept(fptr(std::forward<Args>(args)...)) ) {
             return fptr(std::forward<Args>(args)...);
         }
 
@@ -45,10 +45,10 @@ struct inheritable_save_size_function_ref<Ret (Args...)> {
         T obj;
 
     public:
-        constexpr decltype(auto) operator () (Args &&...args)       noexcept(obj(std::forward<Args>(args)...)) {
+        constexpr decltype(auto) operator () (Args &&...args)       noexcept( noexcept(obj(std::forward<Args>(args)...)) ) {
             return obj(std::forward<Args>(args)...);
         }
-        constexpr decltype(auto) operator () (Args &&...args) const noexcept(obj(std::forward<Args>(args)...)) {
+        constexpr decltype(auto) operator () (Args &&...args) const noexcept( noexcept(obj(std::forward<Args>(args)...)) ) {
             return obj(std::forward<Args>(args)...);
         }
 

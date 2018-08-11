@@ -33,18 +33,33 @@ int main() {
 
     }
 
-    /*
     // Test inheritable_save_size_function_ref::type.
     {
+        std::cout << std::endl << "Test inheritable_save_size_function_ref::type." << std::endl;
+
         // Test specialization for empty functor.
         {
 
-            auto lambda1 = []{};
+            auto lambda1 = []{ LOG(); };
             inheritable_save_size_function_ref<void ()>::type<decltype(lambda1)> o1{lambda1};
+            o1();
+
+            functor f;
+            inheritable_save_size_function_ref<void ()>::type<functor> o2{f};
+            o2();
+
+        }
+
+        // Test specialization for other callable objects.
+        {
+
+            int i;
+            auto lambda = [&]{ LOG(); };
+            inheritable_save_size_function_ref<void ()>::type<decltype(lambda)> o1{lambda};
+            o1();
 
         }
 
     }
-    */
 
 }
