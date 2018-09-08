@@ -4,7 +4,7 @@
 namespace nxwheels {
 template <class Index_t>
 struct edge {
-    Index_t beg, end;
+    Index_t from, to;
 };
 template <class T> edge(const T&) -> edge<T>;
 } /* nxwheels */
