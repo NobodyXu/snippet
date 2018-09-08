@@ -7,11 +7,7 @@ struct OutStreamAdaptor {
     Stream &&s;
 
     template <class T>
-    auto operator << (T &&t) { s << t << " "; return OutStreamAdaptor{*this}; }
-
-    ~OutStreamAdaptor() {
-        s << "\n";
-    }
+    auto& operator << (T &&t) { s << t << std::endl; return *this; }
 };
 template <class T> OutStreamAdaptor(T&&) -> OutStreamAdaptor<T&&>;
 

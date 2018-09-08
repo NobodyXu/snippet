@@ -20,8 +20,9 @@ struct indirected_graph: indirected_graph_api<indirected_graph, boost::uint64_t>
 
     constexpr auto V() const noexcept { return VertexVector.size(); }
     constexpr auto E() const noexcept { return edges; }
-    auto& adj(Index_t N) noexcept { return VertexVector[N]; }
+
     auto& adj(Index_t N) const noexcept { return VertexVector[N]; }
+    auto& iter_over_nodes() const noexcept { return VertexVector; }
 
     void addVertex(Index_t N = 1) { VertexVector.resize(VertexVector.size() + N); }
     void addEdge(const edge &e) {
@@ -41,13 +42,16 @@ struct indirected_graph: indirected_graph_api<indirected_graph, boost::uint64_t>
 
 protected:
     void _addEdge(const edge &e) {
-        VertexVector[e.beg].push_back(e.end);
-        VertexVector[e.end].push_back(e.beg);
+        VertexVector[e.from].push_back(e.to);
+        VertexVector[e.to].push_back(e.from);
     }
     constexpr void set_edges(Index_t _edges) noexcept { edges = _edges; }
 
     uint64_t edges{0};
     std::vector<std::vector<Index_t>> VertexVector;
+public:
+    using const_iterator_for_nodes = typename decltype(VertexVector)::const_iterator;
+    using const_iterator_for_adj   = typename std::vector<Index_t>::const_iterator;
 };
 } /* nxwheels */
 #endif
