@@ -74,11 +74,13 @@
             ++cnt;
             ++beg;
         } while (beg != end && *beg == val);
+        
+        return cnt;
     }
     
     template <class string = std::string, 
                       class size_type = typename string::size_type,
-                      class vector = std::vector<size_type>>
+                      template <class...> class vector_t = std::vector>
     struct character_count
     {
         static_assert(std::is_unsigned<size_type>::value, 
@@ -102,7 +104,7 @@
         str_it out;
         size_type len;
     
-        vector it_vec;
+        vector_t<str_it> it_vec;
     
         void cnt_repeat() noexcept
         {
@@ -155,7 +157,7 @@
     
                 bytes_required += to_str_len<size_type>(len) + 1;
       
-                if (in - first >= bytes_required) {
+                if (size_type(in - first) >= bytes_required) {
                     out = first + bytes_required;
                     return;
                 }
@@ -178,7 +180,7 @@
             do {
                 auto &back = it_vec.back();
    
-                out_last = r_uitos(out_last, prev - back);
+                out_last = r_uitos(out_last, size_type(prev - back));
                 *out_last-- = *back;
     
                 prev = back;
