@@ -233,7 +233,7 @@
     
             return *this;
         }  
-        auto& set_string(sring &&arg) noexcept
+        auto& set_string(string &&arg) noexcept
         {
             str = std::move(arg);
     
