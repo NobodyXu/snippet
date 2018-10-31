@@ -27,7 +27,7 @@
      * out should either points to the beginning of array   or the last.
      * step should be either 1 or -1.
      */
-    template <class RandomAcessIt, class UnsignedInt, 
+    template <class RandomAccessIt, class UnsignedInt, 
                       class = std::enable_if_t<std::is_unsigned<UnsignedInt>::value>>
     auto uitos_impl(RandomAccessIt out, int step, UnsignedInt i) noexcept
     {
@@ -62,11 +62,11 @@
     template <class RanIt, class UnsignedInt>
     auto r_uitos(RanIt last, UnsignedInt i) noexcept
     {
-        returm uitos_impl(last, -1, i);
+        return uitos_impl(last, -1, i);
     }
     
     template <class size_t, class ForwardIt>
-    size_t count_repeat(It beg, ForwardIt end) noexcept
+    size_t count_repeat(ForwardIt beg, ForwardIt end) noexcept
     {
         size_t cnt = 0;
         auto &val = *beg;
@@ -76,7 +76,7 @@
         } while (beg != end && *beg == val);
     }
     
-    template <class string, 
+    template <class string = std::string, 
                       class size_type = typename string::size_type,
                       class vector = std::vector<size_type>>
     struct character_count
@@ -219,7 +219,7 @@
         {
             return std::move(str);
         }
-        auto& get_result() const noexcept
+        auto& get_result() const& noexcept
         {
             return str;
         }
