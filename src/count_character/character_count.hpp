@@ -1,7 +1,6 @@
-#include <string>
+#include <algorithm>
 
 #include <cassert>
-#include <cstddef>
 #include <utility>
 #include <type_traits>
 
@@ -89,7 +88,7 @@ size_t r_count_repeat(BidirectionalIt last) noexcept
     return cnt;
 }
 
-template <class string = std::string,
+template <class string,
           class size_type = typename string::size_type>
 struct character_count
 {
