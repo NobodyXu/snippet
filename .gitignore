@@ -39,3 +39,6 @@
 
 # valgrind result file
 *.out.*
+
+# Swap file
+*.swp
