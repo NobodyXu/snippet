@@ -65,14 +65,14 @@
         return uitos_impl(last, -1, i);
     }
     
-    template <class size_t, class ForwardIt>
-    size_t count_repeat(ForwardIt beg, ForwardIt end) noexcept
+    template <class size_t, class RandomAccessItIt>
+    size_t count_repeat(RandomAccessIt beg, RandomAccessIt end, int step = 1) noexcept
     {
         size_t cnt = 0;
         auto &val = *beg;
         do {
             ++cnt;
-            ++beg;
+            beg += step;
         } while (beg != end && *beg == val);
         
         return cnt;
