@@ -1,5 +1,6 @@
 #include "character_count.hpp"
 
+#include <string>
 #include <cstdlib>
 #include <csignal>
 #include <iostream>
@@ -42,7 +43,7 @@ void test_r_count_repeat(const char *last, std::size_t out) noexcept
     assert(r_count_repeat<std::size_t>(last) == out);
 }
 
-character_count<> obj("aaaaaabcc");
+character_count<std::string> obj("aaaaaabcc");
 
 [[noreturn]] void assertion_failure_handler(int) noexcept
 {
