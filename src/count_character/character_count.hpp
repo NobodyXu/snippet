@@ -108,11 +108,13 @@
     
         void cnt_repeat() noexcept
         {
+            assert(in != str.end());
             len = count_repeat<size_type>(in, str.end());
         }
     
         void advance_in() noexcept
         {
+            assert(in != str.end());
             in += len;
             assert(in <= str.end());
         }
