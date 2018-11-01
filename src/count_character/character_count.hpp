@@ -121,6 +121,8 @@
     
         void process_impl()
         {
+            assert(in != str.end());
+            
             // The main loop
             do {
                 assert(out <= in);
