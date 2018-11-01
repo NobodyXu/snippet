@@ -170,15 +170,17 @@ private:
             }
         } while (in != str.end());
 
+        auto first_offset = first - str.begin();
         // Hopefully this path won't be executed.
-        auto new_size = (first - str.begin()) + bytes_required;
+        auto new_size = first_offset + bytes_required;
 	    
         auto original_size = str.size();
         assert(new_size > original_size);
         
         str.resize(new_size);
+    
+        first = str.begin() + first_offset;
         out = str.end();
-        
         in = str.begin() + original_size;
         end = str.begin() + original_size;
 
