@@ -174,7 +174,7 @@ private:
         auto new_size = (first - str.begin()) + bytes_required;
 	    
         auto original_size = str.size();
-        assert(new_size > oroginal_size);
+        assert(new_size > original_size);
         
         str.resize(new_size);
         out = str.end();
