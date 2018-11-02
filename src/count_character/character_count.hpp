@@ -171,12 +171,12 @@ private:
         auto first_offset = first - str.begin();
         // Hopefully this path won't be executed.
         auto new_size = first_offset + bytes_required;
-	    
+
         auto original_size = str.size();
         assert(new_size > original_size);
-        
+
         str.resize(new_size);
-    
+
         first = str.begin() + first_offset;
         out = str.end();
         in = str.begin() + original_size;
@@ -215,8 +215,8 @@ public:
     {}
 
     /*
-        * ```str``` should not be empty and should not have non-visible character
-        */
+     * ```str``` should not be empty and should not have non-visible character
+     */
     auto& process()
     {
         assert(!str.empty());
@@ -240,6 +240,9 @@ public:
         return str;
     }
 
+    /*
+     * ```str``` should not be empty and should not have non-visible character
+     */
     auto& set_string(const string &arg) noexcept
     {
         str = arg;
@@ -250,6 +253,9 @@ public:
 
         return *this;
     }
+    /*
+     * ```str``` should not be empty and should not have non-visible character
+     */
     auto& set_string(string &&arg) noexcept
     {
         str = std::move(arg);
