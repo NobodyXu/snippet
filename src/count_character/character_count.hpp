@@ -109,27 +109,26 @@ private:
 
     str_it in;
     str_it out;
+    str_it end;
     size_type len;
 
     void cnt_repeat() noexcept
     {
-        assert(in != str.end());
+        assert(in != end);
         len = count_repeat<size_type>(in, str.end());
     }
 
     void advance_in() noexcept
     {
-        assert(in != str.end());
+        assert(in != end);
         in += len;
-        assert(in <= str.end());
+        assert(in <= end);
     }
 
     void process_impl()
     {
-        assert(in != str.end());
+        assert(in != end);
         assert(out <= in);
-
-	   auto end = str.end();
 
         // The main loop
         do {
@@ -169,12 +168,19 @@ private:
             }
         } while (in != str.end());
 
+        auto first_offset = first - str.begin();
         // Hopefully this path won't be executed.
-        auto new_size = (first - str.begin()) + bytes_required;
-        assert(new_size > str.size());
-
+        auto new_size = first_offset + bytes_required;
+	    
+        auto original_size = str.size();
+        assert(new_size > original_size);
+        
         str.resize(new_size);
+    
+        first = str.begin() + first_offset;
         out = str.end();
+        in = str.begin() + original_size;
+        end = str.begin() + original_size;
 
 	    return first;
     }
@@ -201,11 +207,11 @@ private:
 
 public:
     character_count(string &&arg):
-        str(std::move(arg)), in(str.begin()), out(str.begin())
+        str(std::move(arg)), in(str.begin()), out(str.begin()), end(str.end())
     {}
 
     character_count(const string &arg):
-        str(arg), in(str.begin()), out(str.begin())
+        str(arg), in(str.begin()), out(str.begin()), end(str.end())
     {}
 
     /*
@@ -240,6 +246,7 @@ public:
 
         in = str.begin();
         out = str.begin();
+        end = str.end();
 
         return *this;
     }
@@ -249,6 +256,7 @@ public:
 
         in = str.begin();
         out = str.begin();
+        end = str.end();
 
         return *this;
     }
