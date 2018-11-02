@@ -21,9 +21,9 @@ size_t to_str_len(UnsignedInt i) noexcept
 }
 
 /*
-    * out should either points to the beginning of array   or the last.
-    * step should be either 1 or -1.
-    */
+ * out should either points to the beginning of array   or the last.
+ * step should be either 1 or -1.
+ */
 template <class RandomAccessIt, class UnsignedInt,
           class = std::enable_if_t<std::is_unsigned<UnsignedInt>::value>>
 auto uitos_impl(RandomAccessIt out, int step, UnsignedInt i) noexcept
@@ -62,30 +62,28 @@ auto r_uitos(RanIt last, UnsignedInt i) noexcept
     return uitos_impl(last, -1, i);
 }
 
-template <class size_t, class ForwardIt>
-size_t count_repeat(ForwardIt beg, ForwardIt end) noexcept
+template <class size_t, class RandomAccessIt>
+size_t count_repeat(RandomAccessIt beg, RandomAccessIt end) noexcept
 {
-    size_t cnt = 0;
+    auto first = beg;
     auto &val = *beg;
     do {
-        ++cnt;
         ++beg;
     } while (beg != end && *beg == val);
 
-    return cnt;
+    return beg - first;
 }
 
-template <class size_t, class BidirectionalIt>
-size_t r_count_repeat(BidirectionalIt last) noexcept
+template <class size_t, class RandomAccessIt>
+size_t r_count_repeat(RandomAccessIt last) noexcept
 {
-    size_t cnt = 0;
-    auto &val = *last;
+    auto it = last;
+    auto &val = *it;
     do {
-        ++cnt;
-        --last;
-    } while (*last == val);
+        --it;
+    } while (*it == val);
 
-    return cnt;
+    return last - it;
 }
 
 template <class string,
