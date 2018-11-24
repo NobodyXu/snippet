@@ -20,14 +20,17 @@ set foldmethod=syntax
 " Make netrw change dir while exploring
 let g:netrw_keepdir = 0
 
-" Put these lines at the very end of your vimrc file.
-"
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
 packloadall
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
 silent! helptags ALL
+
+" Add ctags
+set tags=/usr/include/tags
+set tags+=/usr/local/include/tags
+set tags+=./tags
 
 " Use F8 to open/close tagbar
 nmap <F8> :TagbarToggle<CR>

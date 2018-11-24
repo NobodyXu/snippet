@@ -33,3 +33,7 @@ vim -- in .vim/pack/ANY_NAME/startup
     -- tagbar for viewing all ctags in a file
 
 ctag -- Create tags for c/c++ ... Vim can use them directly.
+    + tagbar
+
+parallel (depends sysstat) -- for paralleling shell jobs
+sysstat

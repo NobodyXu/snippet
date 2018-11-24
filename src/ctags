@@ -1,0 +1,14 @@
+--recurse
+--append
+
+--exclude=.*
+--exclude=.tmp
+
+--exclude=\*.gch
+
+--exclude=\*.o
+--exclude=\*.s
+
+--exclude=\*.a
+--exclude=\*.so
+--exclude=\*.out
