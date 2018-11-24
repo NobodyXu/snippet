@@ -8,3 +8,28 @@ https://code.visualstudio.com/docs/languages/csharp
 https://code.visualstudio.com/docs/other/unity
 
 gimp (image editing and screen shots)
+
+checkinstall (for building *.deb)
+
+aptitude (for installing softwares apt cannot)
+
+/usr/share/xsessions/ for adding desltop manager
+
+less /var/log/apt/history.log (show histroy of apt)
+
+lsof check the files opened by process
+    lsof -p PID
+
+getopts -- paraphasing command line argumentsof a shell script
+
+pgrep -- grep a pid based on attributes
+
+vim -- in .vim/pack/ANY_NAME/startup
+    -- ale for diagnostic, fixing, goto ... for c/c++ programming.
+    -- netrw for filesystem view
+           :Explore
+	   :Sexplore
+	   :o /* a dir */
+    -- tagbar for viewing all ctags in a file
+
+ctag -- Create tags for c/c++ ... Vim can use them directly.
