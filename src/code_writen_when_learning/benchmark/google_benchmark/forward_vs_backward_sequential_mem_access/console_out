@@ -1,0 +1,71 @@
+2018-11-26 22:10:52
+Running ./a.out
+Run on (8 X 1600 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x4)
+  L1 Instruction 32K (x4)
+  L2 Unified 256K (x4)
+  L3 Unified 6144K (x1)
+--------------------------------------------------------------
+Benchmark                       Time           CPU Iterations
+--------------------------------------------------------------
+BM_forward/8                    6 ns          6 ns  110876793
+BM_forward/16                  12 ns         12 ns   58030464
+BM_forward/32                  23 ns         23 ns   29831616
+BM_forward/64                  47 ns         47 ns   15002294
+BM_forward/128                100 ns        100 ns    6891048
+BM_forward/256                194 ns        194 ns    3621642
+BM_forward/512                378 ns        378 ns    1850198
+BM_forward/1024               748 ns        748 ns     913428
+BM_forward/2048              1494 ns       1494 ns     466517
+BM_forward/4096              3026 ns       3025 ns     235814
+BM_forward/8192              5950 ns       5950 ns     115282
+BM_forward/16384            11899 ns      11895 ns      58198
+BM_forward/32768            23741 ns      23741 ns      29497
+BM_forward/65536            47485 ns      47479 ns      14748
+BM_forward/131072           94760 ns      94759 ns       7278
+BM_forward/262144          189516 ns     189516 ns       3683
+BM_forward/524288          380400 ns     380326 ns       1830
+BM_forward/1048576         759259 ns     759245 ns        901
+BM_forward/2097152        1520811 ns    1520192 ns        455
+BM_forward/4194304        3050685 ns    3050649 ns        229
+BM_forward/8388608        6298212 ns    6295429 ns        111
+BM_forward/16777216      12431806 ns   12430711 ns         56
+BM_forward/33554432      24916126 ns   24899028 ns         28
+BM_forward/67108864      49686766 ns   49684090 ns         14
+BM_forward/134217728     99809094 ns   99743992 ns          7
+BM_forward/268435456    198973559 ns  198958716 ns          4
+BM_forward/536870912    399537059 ns  399445015 ns          2
+BM_forward/1073741824   798281401 ns  797974436 ns          1
+BM_forward_BigO              0.74 N       0.74 N 
+BM_forward_RMS                  0 %          0 % 
+BM_backward/8                   7 ns          7 ns   94815240
+BM_backward/16                 13 ns         13 ns   52530147
+BM_backward/32                 27 ns         27 ns   26448680
+BM_backward/64                 50 ns         50 ns   13697538
+BM_backward/128               100 ns        100 ns    6891608
+BM_backward/256               193 ns        193 ns    3632642
+BM_backward/512               378 ns        378 ns    1854538
+BM_backward/1024              747 ns        747 ns     918911
+BM_backward/2048             1507 ns       1507 ns     461015
+BM_backward/4096             3021 ns       3021 ns     232685
+BM_backward/8192             5989 ns       5987 ns     114622
+BM_backward/16384           11911 ns      11909 ns      57966
+BM_backward/32768           23689 ns      23689 ns      29506
+BM_backward/65536           48158 ns      48151 ns      14732
+BM_backward/131072          94879 ns      94877 ns       7231
+BM_backward/262144         189794 ns     189764 ns       3683
+BM_backward/524288         380120 ns     380112 ns       1840
+BM_backward/1048576        762009 ns     761745 ns        901
+BM_backward/2097152       1522285 ns    1522219 ns        456
+BM_backward/4194304       3057668 ns    3056013 ns        229
+BM_backward/8388608       6195259 ns    6194802 ns        111
+BM_backward/16777216     12478767 ns   12475317 ns         56
+BM_backward/33554432     24902247 ns   24897000 ns         28
+BM_backward/67108864     49882669 ns   49854932 ns         14
+BM_backward/134217728   101022849 ns  101014856 ns          7
+BM_backward/268435456   198644812 ns  198571516 ns          4
+BM_backward/536870912   397453069 ns  397198300 ns          2
+BM_backward/1073741824  794660219 ns  794568793 ns          1
+BM_backward_BigO             0.74 N       0.74 N 
+BM_backward_RMS                 1 %          1 % 

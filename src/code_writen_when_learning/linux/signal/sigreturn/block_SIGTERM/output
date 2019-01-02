@@ -1,0 +1,65 @@
+==2296== Memcheck, a memory error detector
+==2296== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==2296== Using Valgrind-3.12.0.SVN and LibVEX; rerun with -h for copyright info
+==2296== Command: ./a.out
+==2296== 
+Invoke Sigreturn the 1 time
+Start doing the real thing
+==2296== Thread 1 return signal frame corrupted.  Killing process.
+==2296== 
+==2296== Process terminating with default action of signal 11 (SIGSEGV)
+==2296==  General Protection Fault
+==2296==    at 0x4F2A8F7: syscall (syscall.S:37)
+==2296== Invalid write of size 8
+==2296==    at 0x4A276B0: _vgnU_freeres (vg_preloaded.c:59)
+==2296==    by 0x422616F: ???
+==2296==    by 0x20130B: ??? (in /home/nobodyxu/github/snippet/src/code_writen_when_learning/linux/signal/sigreturn/block_SIGTERM/a.out)
+==2296==    by 0x2015D9: ??? (in /home/nobodyxu/github/snippet/src/code_writen_when_learning/linux/signal/sigreturn/block_SIGTERM/a.out)
+==2296==    by 0x4E5AA86: (below main) (libc-start.c:310)
+==2296==  Address 0xffefff4c8 is on thread 1's stack
+==2296==  in frame #0, created by _vgnU_freeres (vg_preloaded.c:59)
+==2296== 
+==2296== Invalid write of size 8
+==2296==    at 0x4A276D8: _vgnU_freeres (vg_preloaded.c:77)
+==2296==  Address 0xffefff470 is on thread 1's stack
+==2296== 
+Invoke GetContextAndSetSigmask
+==2296== Invalid read of size 8
+==2296==    at 0x4F9E54F: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.27.so)
+==2296==    by 0x4A276DC: _vgnU_freeres (vg_preloaded.c:77)
+==2296==  Address 0xffefff470 is on thread 1's stack
+==2296==  in frame #0, created by __libc_freeres (???:)
+==2296== 
+==2296== Invalid write of size 8
+==2296==    at 0x4A276DD: _vgnU_freeres (vg_preloaded.c:82)
+==2296==  Address 0xffefff498 is on thread 1's stack
+==2296== 
+==2296== Invalid write of size 8
+==2296==    at 0x4A276E9: _vgnU_freeres (vg_preloaded.c:82)
+==2296==  Address 0xffefff4a0 is on thread 1's stack
+==2296== 
+==2296== Invalid write of size 8
+==2296==    at 0x4A276F3: _vgnU_freeres (vg_preloaded.c:82)
+==2296==  Address 0xffefff4a8 is on thread 1's stack
+==2296== 
+==2296== Invalid write of size 8
+==2296==    at 0x4A276FB: _vgnU_freeres (vg_preloaded.c:82)
+==2296==  Address 0xffefff4b0 is on thread 1's stack
+==2296== 
+==2296== Invalid write of size 8
+==2296==    at 0x4A27703: _vgnU_freeres (vg_preloaded.c:82)
+==2296==  Address 0xffefff4b8 is on thread 1's stack
+==2296== 
+==2296== Invalid write of size 8
+==2296==    at 0x4A2770B: _vgnU_freeres (vg_preloaded.c:82)
+==2296==  Address 0xffefff4c0 is on thread 1's stack
+==2296== 
+==2296== 
+==2296== HEAP SUMMARY:
+==2296==     in use at exit: 0 bytes in 0 blocks
+==2296==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==2296== 
+==2296== All heap blocks were freed -- no leaks are possible
+==2296== 
+==2296== For counts of detected and suppressed errors, rerun with: -v
+==2296== ERROR SUMMARY: 9 errors from 9 contexts (suppressed: 0 from 0)

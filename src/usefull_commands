@@ -25,15 +25,115 @@ getopts -- paraphasing command line argumentsof a shell script
 pgrep -- grep a pid based on attributes
 
 vim -- in .vim/pack/ANY_NAME/startup
-    -- ale for diagnostic, fixing, goto ... for c/c++ programming.
+    -- ALE for diagnostic, fixing, goto ... for c/c++ programming.
     -- netrw for filesystem view
            :Explore
 	   :Sexplore
 	   :o /* a dir */
     -- tagbar for viewing all ctags in a file
+    -- w for jumping to the beg of words forward
+    -- b for backward
+    -- e for end of the words forward
 
 ctag -- Create tags for c/c++ ... Vim can use them directly.
-    + tagbar
+    tagbar
+	+ for unfold
+	- for fold
+	ctrl + ] for goto
+	ctrl + T for go back
+	:ts for select the tag
+	:tn for the next tag
+	:tp for the previous
+	:tf for the first
+	:tl for the last
 
 parallel (depends sysstat) -- for paralleling shell jobs
 sysstat
+
+sudo -A (get passwd from UI) with SUDO_ASKPASS env var set to /usr/bin/ssh-askpass
+
+ccmake -- A ncurses/gui interface for cmake
+
+linker -- -Wl, --as-needed 
+          Usefull for C++ when you do not need libstdc++/libc++
+
+ncurses-doc -- This packages provides doc for ncurses.
+
+TO NOT USE libstdc++/libc++, either use -nodefaultlibs -fno-exceptions, or compile only, then link manually
+
+"-nostdlib" can be used to not link to libc
+
+git ls-files | xargs wc -l -- count lines of github library, can add *.hpp, *.cc (etc) after ls-files
+
+basename, dirname -- for extracting filename and path to the file.
+
+apt-listchanges -- List changes while upgrading softward
+    configure by using sudo dpkg-reconfigure to use it 
+
+find -L ./ -mindepth 15 -- Find circular loops
+
+journalctl -- Read log of a service
+
+/proc/mounts -- Information about all mounts on a system
+    better: mount -l (-t type)
+
+usermod -- Modify an existing user
+
+getent passwd user_name -- Get user info
+
+readahead, madvise, posix_fadvise -- Syscalls improve system performance by giving kernel info about using of fd/mem/fd access pattern
+
+mincore -- A syscall returns what page resides in mem
+
+personality -- A syscall to enable the use of other Unix executable
+
+prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0) -- Allow a user to modify its env and persist it since it can not gain new priv by exec setuid program (but still can setuid).
+
+pactl -- set-sink-volume 0 (+ %/- %/ %)
+
+di -h -- display the tota size of a dir
+
+lsw -- list windows
+
+/etc/sysctl.conf for changing system variables set at boot
+
+sysctl -w -- Change option
+    example: sysctl -w kernel.unprivileged_userns_clone=1
+
+git checkout HEAD -- filename -- Reset filename to the unstaged
+
+sed -i -- inplace editing
+
+strace -- CTL programme based on ptrace function provided by linux kernel
+    1. Trace syscall (-e trace=) by name, predefined groups, regular expression.
+    2. Specifying a list of paths to be traced (Ex -P /etc/ld.so.cache).
+    3. Specifying a list of file descriptors whose I/O should be dumped (-e read= and -e write= options).
+    4. Measure syscall execution time and count (-T, -c, -C, and -w options).
+    5. Printing relative or absolute time stamps (-t and -r options).
+    6. Modifying return and error code of the specified syscalls, and inject signals upon their execution (since strace 4.15, -e inject= option).
+    7. Extracting information about file descriptors (including sockets, -y option).
+    8. Printing stack traces, including (since strace 4.21) symbol demangling (-k option).
+
+
+chrome://process-internals
+
+chrome://flags/
+
+grep -v "PATTERN" -- exclude lines containing "PATTERN"
+
+nm -D file -- Check the symbols of a library (executable)
+
+CFLAGS = -Oz -pipe -flto
+LDFLAGS = -pipe -flto -Wl,--plugin-opt=O3 -Wl,--icf=all -Wl,-O2 -Wl,--strip-all -Wl,--as-needed 
+
+-Wl,--discard-all for discarding all local symbols
+
+-Wl,--gc-sections for discarding unused sections
+
+-nostartfiles -- Use during linking to not generate _start function\
+
+'{' and '}' and be used to swap splits in tmux command mode
+
+ctrl-w + r -- rotate splits in vim
+
+ctrl + space for sogou pinin
