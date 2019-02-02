@@ -1,0 +1,4 @@
+In the parent:  ruid = 1000, euid = 0, suid = 0.
+In the child process:  ruid = 1000, euid = 0, suid = 0.
+After exec file ./b.out:  ruid = 1000, euid = 0, suid = 0.
+After exec itself (which should be a suid executable):  ruid = 1000, euid = 0, suid = 0.

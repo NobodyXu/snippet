@@ -124,7 +124,7 @@ grep -v "PATTERN" -- exclude lines containing "PATTERN"
 nm -D file -- Check the symbols of a library (executable)
 
 CFLAGS = -Oz -pipe -flto
-LDFLAGS = -pipe -flto -Wl,--plugin-opt=O3 -Wl,--icf=all -Wl,-O2 -Wl,--strip-all -Wl,--as-needed 
+LDFLAGS = -pipe -flto -Wl,--plugin-opt=O3,--icf=all,-O2,--strip-all,--as-needed 
 
 -Wl,--discard-all for discarding all local symbols
 
@@ -137,3 +137,28 @@ LDFLAGS = -pipe -flto -Wl,--plugin-opt=O3 -Wl,--icf=all -Wl,-O2 -Wl,--strip-all 
 ctrl-w + r -- rotate splits in vim
 
 ctrl + space for sogou pinin
+
+upower -i /org/freedesktop/UPower/devices/battery_BAT0
+
+NIS, LDAP for extending user and group management on linux to a network extent
+
+alternative to make -- ninja (for large project with a configuration system like cmake)
+		       tup -- for updating quickly	
+		       redo -- another design
+
+libstdc++-6-doc -- man pages for libstdc++-6
+
+Viewing man pages in vim -- Either use man ... | vim -;
+			    Or add 'runtime ftplugin/man.vim' to .vimrc or run it(:...) in vim command mode.
+
+memfd_create -- syscall in linux that can create annoymous files.
+
+O_TMPFILE -- flag for open that can create a annoymous temp file under the specified path.
+
+File sealing in linux -- Preventing certain operation to happen on specified file.
+
+strsignal -- Return a string describing the specified signal number.
+
+err, error, perror -- Reporting failure indicated by errno.
+
+asprintf -- Analogs of sprintf, but can allocate a string itself.
