@@ -162,3 +162,11 @@ strsignal -- Return a string describing the specified signal number.
 err, error, perror -- Reporting failure indicated by errno.
 
 asprintf -- Analogs of sprintf, but can allocate a string itself.
+
+shift + insert to paste in urxvt
+
+libglib -- usefull containers in C
+
+libxcb -- smaller version with multi-threaded support alternative of Xlibs
+
+libxdo -- simluate mouse/kebyboard in X windows
