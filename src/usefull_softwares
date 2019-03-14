@@ -170,3 +170,14 @@ libglib -- usefull containers in C
 libxcb -- smaller version with multi-threaded support alternative of Xlibs
 
 libxdo -- simluate mouse/kebyboard in X windows
+
+The GNU Readline Library and The GNU History Library
+
+nmon -- Sth like htop  but more configurable at what to display
+
+nmcli -- frontend to networkmanager
+
+nm-connection-editor -- For editing connection of networkmanager in GUI, depended on network-manager-gnome
+sxiv -- for displaying images -- fast to start, lightweight
+
+wajig is a Debian tool that attempts to unify Debian packagement.

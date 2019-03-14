@@ -1,5 +1,3 @@
-#include <stdbool.h>
-
 #ifndef  likely
 # define likely(EXPR) __builtin_expect((EXPR), true)
 #endif

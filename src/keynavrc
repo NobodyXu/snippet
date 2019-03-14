@@ -18,7 +18,7 @@
 #
 # Project page; http://www.semicomplete.com/projects/keynav
 
-clear	  # blwo away any previous keybindings
+clear
 daemonize # background the services
 
 # start and end of service

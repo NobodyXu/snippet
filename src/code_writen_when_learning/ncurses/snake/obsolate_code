@@ -1,0 +1,101 @@
+    std::size_t get_grown_cap() const noexcept
+    {
+	return capacity() * 1.5;
+    }
+
+
+    void **get_list_p(void *block_p) const
+    {
+	return reinterpret_cast<void**>(static_cast<char*>(block_p) + len_per_block);
+    }
+
+    void* get_block_p(void **list_p) const
+    {
+	return static_cast<void*>(reinterpret_cast<char*>(list_p) - len_per_block);
+    }
+
+    void append(void **original_list_p, void **new_list_p) const noexcept
+    {
+	*new_list_p = *original_list_p;
+	*original_list_p = get_block_p(new_list_p);
+    }
+
+    void append(void **original_list_p, void *new_block_p) const noexcept
+    {
+	*get_list_p(new_block_p) = *original_list_p;
+	*original_list_p = new_block_p;
+    }
+
+    void append_unused_block_at_back(void **recycled_list_p)
+    {
+	append(last_list_p, recycled_list_p);
+
+	++num_of_unused_blocks;
+    }
+
+    /*!
+     * remove_next_block removes the next block pointed by list_p while maintaing the 
+     * forward list structure.
+     * However, it won't modify the list pointer of the next block.
+     */
+    void* remove_next_block(void **list_p) const noexcept
+    {
+	void *next_block_p = *list_p;
+
+	*list_p = *get_list_p(next_block_p);
+
+	return next_block_p;
+    }
+
+    /*!
+     * precondition: block_ptr != nullptr
+     *
+     * deallocate will free all allocated blocks pointed to by block_ptr.
+     */
+    void deallocate(void *block_ptr) const noexcept
+    {
+	auto it = &block_ptr; 
+	do {
+	    std::free(remove_next_block(it));
+	} while(*it != nullptr);
+    }
+
+    /*!
+     * precondition: n > 0
+     * Guarantee on failure: If one allocation fails, 
+     *			     all other allocated block will be freed.
+     *
+     * allocate_new_blocks use allocate_new_block to allocate blocks and then chain them into
+     * a forward list.
+     */
+    auto allocate_new_blocks(std::size_t n) -> std::pair<void*, void**>
+    {
+	void *first_block_p = allocate_new_block();
+	// use capital 'L' to prevent naming problem, since there is a "last_list_p" data member.
+	void **Last_list_p;
+	void *new_block_p;
+
+	if (unlikely(first_block_p == nullptr))
+	    goto throw_exception;
+
+	Last_list_p = get_list_p(first_block_p);
+
+	for (std::size_t i = 1; i != n; ++i) {
+	    new_block_p = allocate_new_block();
+
+	    if (unlikely(new_block_p == nullptr))
+		goto allocation_failure;
+		    
+	    *Last_list_p = new_block_p;
+	    Last_list_p = get_list_p(new_block_p);
+	}
+
+	return {first_block_p, last_list_p};
+
+allocation_failure:
+	deallocate(first_block_p);
+throw_exception:
+	throw std::bad_alloc();
+    }
+
+
