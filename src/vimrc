@@ -50,3 +50,19 @@ set tags+=./tags
 
 " Use F8 to open/close tagbar
 nmap <F8> :TagbarToggle<CR>
+
+" nvim-R
+let r_syntax_folding = 1
+
+" R output is highlighted with current colorscheme
+let g:rout_follow_colorscheme = 1
+" R commands in R output are highlighted
+let g:Rout_more_colors = 1
+
+" Use vim 8.1/nvim builtin :term feature
+let g:R_in_buffer = 1
+" After \ao, open the *.Rout in a new split window
+let g:R_routnotab = 1
+
+" lh-brackets
+let g:usemarks = 0

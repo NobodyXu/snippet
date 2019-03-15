@@ -1,0 +1,16 @@
+# Installed by vmb
+nvim-R
+csv.vim
+# Installed by git clone and git checkout tags/version_number
+ale
+dispatch
+lh-brackets
+lh-vim-lib
+tagbar
+vim-fugitive
+vimproc.vim
+vim-vebugger
+# Manually installed
+conque_gdb
+copy_without_auto_indent
+cscope_maps
