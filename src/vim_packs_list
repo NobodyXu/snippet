@@ -11,6 +11,5 @@ vim-fugitive
 vimproc.vim
 vim-vebugger
 # Manually installed
-conque_gdb
 copy_without_auto_indent
 cscope_maps

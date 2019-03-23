@@ -19,6 +19,9 @@ set ruler
 set number "show the line number
 set laststatus=2 "always displays statusline
 set autoindent "inherit the way of indent in the previous line
+
+set expandtab
+
 "provides indent for c
 set smartindent
 set cindent
