@@ -203,3 +203,5 @@ Intel TBB (v4.3), a C++ library for task parallelism with a wide variety of para
 RcppParallel-- tinythread intel tbb and wrapper over some R types.
 
 hub -- A command line tool that access github API to do things like PR from commandline.
+
+flameshot -- A usefull software to screen shot. Can edit the screen shot, copy the screenshot the clipboard. It is so nice! Just run 'flameshot gui`!(I have already added this as a command)

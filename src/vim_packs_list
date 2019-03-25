@@ -10,6 +10,8 @@ tagbar
 vim-fugitive
 vimproc.vim
 vim-vebugger
+python-mode (contains pylint and other linters)
+SimpylFold
 # Manually installed
 copy_without_auto_indent
 cscope_maps

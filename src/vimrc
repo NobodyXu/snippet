@@ -43,8 +43,10 @@ packloadall
 silent! helptags ALL
 
 " Configure ALE
-let g:ale_cpp_clang_options="-std=c++17"
+let g:ale_cpp_clang_options = "-std=c++17"
 
+" lh-brackets
+let g:usemarks = 0
 
 " Add ctags
 set tags=/usr/include/tags
@@ -67,5 +69,43 @@ let g:R_in_buffer = 1
 " After \ao, open the *.Rout in a new split window
 let g:R_routnotab = 1
 
-" lh-brackets
-let g:usemarks = 0
+" Pymode configuration
+" Warning: This is very long
+" Turn pymode on
+let g:pymode = 1
+" Turn off plugin's warnings
+let g:pymode_warnings = 1
+" Use default settings(documented in :h pymode
+let g:pymode_options = 1
+
+" Use python3 and enable indent
+let g:pymode_python = 'python3'
+let g:pymode_indent = 1
+
+" Show pydoc when pressing 'K'
+let g:pymode_doc = 1
+let g:pymode_doc_bind = 'K'
+
+" Run python code
+let g:pymode_run = 1
+" It seems that by default, '<leader>' in vim is '\'
+let g:pymode_run_bind = '<leader>r'
+
+" Linting
+let g:pymode_lint = 1
+let g:pymode_lint_on_fly = 0
+let g:pymode_lint_message = 1
+let g:pymode_lint_checkers = 'pylint'
+let g:pymode_lint_cwindow = 1
+let g:pymode_lint_signs = 1
+
+" Turn on code completion
+let g:pymode_rope_completion = 1
+let g:pymode_rope_complete_on_dot = 1
+
+" Syntax highlighting
+let g:pymode_syntax = 1
+let g:pymode_syntax_slow_sync = 0
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
