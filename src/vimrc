@@ -109,3 +109,23 @@ let g:pymode_syntax_slow_sync = 0
 let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+" vimcmdline mappings
+let cmdline_map_start          = '\s'
+"let cmdline_map_send           = '\<Space>'
+let cmdline_map_send_and_stay  = '\<Space>'
+" Send file
+let cmdline_map_source_fun     = '\f'
+let cmdline_map_send_paragraph = '\p'
+let cmdline_map_send_block     = '\b'
+let cmdline_map_quit           = '\q'
+
+" vimcmdline options
+let cmdline_vsplit      = 1      " Split the window vertically
+let cmdline_in_buffer   = 0      " Start the interpreter in tmux since vimcmdline doesn't support vim term
+" let cmdline_in_buffer   = 1      " Start the interpreter in a Neovim's terminal
+" let cmdline_term_height = 15     " Initial height of interpreter window or pane
+" let cmdline_term_width  = 80     " Initial width of interpreter window or pane
+" let cmdline_tmp_dir     = '/tmp' " Temporary directory to save files
+" let cmdline_outhl       = 1      " Syntax highlight the output
+" let cmdline_auto_scroll = 1      " Keep the cursor at the end of terminal (nvim)

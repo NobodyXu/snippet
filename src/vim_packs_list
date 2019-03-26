@@ -4,14 +4,18 @@ csv.vim
 # Installed by git clone and git checkout tags/version_number
 ale
 dispatch
-lh-brackets
-lh-vim-lib
+lh-brackets # autocomplete brackets, '<', '{', etc.
+lh-vim-lib  # dependency of lh-brackets
 tagbar
 vim-fugitive
 vimproc.vim
 vim-vebugger
 python-mode (contains pylint and other linters)
-SimpylFold
+SimpylFold # Provide fold for python
+# vimcmdline Send lines to interpreter
+# Support Clojure, Golang, Haskell, JavaScript, Julia, Jupyter, Lisp, Macaulay2, Matlab, Prolog, 
+#         Python, Ruby, Sage, Scala, Shell script, and Swift.
+vimcmdline
 # Manually installed
 copy_without_auto_indent
 cscope_maps
