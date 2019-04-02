@@ -5,7 +5,7 @@
 export GOROOT=/usr/local/go
 export GOPATH=$HOME
 
-export PATH=/usr/local/bin:/bin:/usr/bin:/home/nobodyxu/.cargo/bin:$GOPATH/bin:$GOROOT/bin:/home/nobodyxu/depot_tools:/usr/local/musl/bin
+export PATH=/opt/conda/bin:/usr/local/bin:/bin:/usr/bin:/home/nobodyxu/.cargo/bin:$GOPATH/bin:$GOROOT/bin:/home/nobodyxu/depot_tools:/usr/local/musl/bin
 
 export CC=clang-8
 export CXX=clang++-8
@@ -22,11 +22,13 @@ export LESS="-R"
 export EDITOR=vim
 alias lsc="ls --color=always"
 
+# Load conda path
+source /opt/conda/etc/profile.d/conda.sh
+
 # Load hub.bash_completion.sh
 if [ -f /home/nobodyxu/github/snippet/src/hub.bash_completion.sh ]; then
   . /home/nobodyxu/github/snippet/src/hub.bash_completion.sh
 fi
-
 
 # If not running interactively, don't do anything
 case $- in

@@ -205,3 +205,15 @@ RcppParallel-- tinythread intel tbb and wrapper over some R types.
 hub -- A command line tool that access github API to do things like PR from commandline.
 
 flameshot -- A usefull software to screen shot. Can edit the screen shot, copy the screenshot the clipboard. It is so nice! Just run 'flameshot gui`!(I have already added this as a command)
+
+asciinema -- A usefull terminal recorder, writen in python. Works by utilizing psudoterminal on linux.
+    Example:
+    asciinema rec filename.json    # Record and output to file
+    asciinema play filename.json   # Playback
+    asciinema upload filename.json # Upload the json file to https://asciinema.org and produce a video. Without linking any account, the video will only exist for a week.
+
+    For how to share it, see https://asciinema.org/docs/embedding
+
+display -- Part of imageMagick that can view gif
+
+screen_off -- writen by myself
