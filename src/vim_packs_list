@@ -16,6 +16,7 @@ SimpylFold # Provide fold for python
 # Support Clojure, Golang, Haskell, JavaScript, Julia, Jupyter, Lisp, Macaulay2, Matlab, Prolog, 
 #         Python, Ruby, Sage, Scala, Shell script, and Swift.
 vimcmdline
+codi.vim
 # Manually installed
 copy_without_auto_indent
 cscope_maps

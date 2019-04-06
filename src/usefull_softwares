@@ -91,7 +91,8 @@ prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0) -- Allow a user to modify its env and per
 
 pactl -- set-sink-volume 0 (+ %/- %/ %)
 
-di -h -- display the tota size of a dir
+du -sh -- display the tota size of a dir
+du -ah -- display the size of each file/dir of a dir and its total size
 
 lsw -- list windows
 
@@ -217,3 +218,11 @@ asciinema -- A usefull terminal recorder, writen in python. Works by utilizing p
 display -- Part of imageMagick that can view gif
 
 screen_off -- writen by myself
+
+axel -- multistream download manager from multiple http(s) and can also search for more links
+
+aria2 (command line app name aria2c) -- Similar to axel, but much more powerfull. Can download from http, ftp, torrent, magnent, etc. Can donwload one file from one torrent and multi http at the same time.
+
+nmap -- Finding computers on same network
+
+how2 -- from github santinic/how2 search on stackoverflow for answers to questions in terminal

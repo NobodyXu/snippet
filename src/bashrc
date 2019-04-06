@@ -5,7 +5,7 @@
 export GOROOT=/usr/local/go
 export GOPATH=$HOME
 
-export PATH=/opt/conda/bin:/usr/local/bin:/bin:/usr/bin:/home/nobodyxu/.cargo/bin:$GOPATH/bin:$GOROOT/bin:/home/nobodyxu/depot_tools:/usr/local/musl/bin
+export PATH=/usr/local/bin:/bin:/usr/bin:/home/nobodyxu/.cargo/bin:$GOPATH/bin:$GOROOT/bin:/home/nobodyxu/depot_tools:/usr/local/musl/bin:/opt/conda/bin
 
 export CC=clang-8
 export CXX=clang++-8
@@ -29,6 +29,20 @@ source /opt/conda/etc/profile.d/conda.sh
 if [ -f /home/nobodyxu/github/snippet/src/hub.bash_completion.sh ]; then
   . /home/nobodyxu/github/snippet/src/hub.bash_completion.sh
 fi
+
+# Codi
+# Usage: codi [filetype] [filename]
+codi() {
+  local syntax="${1:-python}"
+  shift
+  vim -c \
+    "let g:startify_disable_at_vimenter = 1 |\
+    set bt=nofile ls=0 noru nonu nornu |\
+    hi ColorColumn ctermbg=NONE |\
+    hi VertSplit ctermbg=NONE |\
+    hi NonText ctermfg=0 |\
+    Codi $syntax" "$@"
+}
 
 # If not running interactively, don't do anything
 case $- in
