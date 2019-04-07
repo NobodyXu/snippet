@@ -1,6 +1,7 @@
 #ifndef  __twoSum_findtwoSum_HPP__
 # define __twoSum_findtwoSum_HPP__
 
+# include <iostream>
 # include <vector>
 # include <algorithm>
 # include <utility>
@@ -11,70 +12,6 @@
 # include <future>
 
 using std::vector;
-
-namespace functional {
-template <class F>
-class function_base;
-
-// function_base is just a pure-virtual base
-template <class Ret, class ...Args>
-class function_base<Ret (Args...)>
-{
-protected:
-    using F = Ret (Args...);
-    using dtor_t = void (char *func_data);
-
-    dtor_t *dtor_ptr = nullptr;
-    F *fptr = nullptr;
-    char func_data[0];
-
-public:
-    function_base() = default;
-
-    function_base(const function_base&) = delete;
-    function_base(function_base&&) = delete;
-
-    function_base& operator = (const function_base&) = delete;
-    function_base& operator = (function_base&&) = delete;
-
-    bool is_valid() const noexcept
-    {
-        return fptr != nullptr;
-    }
-
-    // Precondition: is_valid() == true
-    Ret operator () (Args &&...args)
-    {
-        return fptr(std::forward<Args>(args)...);
-    }
-
-    ~function_base()
-    {
-        if (dtor_ptr != nullptr)
-            dtor_ptr(func_data);
-    }
-};
-
-template <class F, class Func>
-class function;
-
-// function should be allocated on heap.
-template <class Ret, class ...Args, class Func>
-class function<Ret (Args...), Func>: public function_base<Ret (Args...)>
-{
-    Func f;
-
-public:
-    function() = default;
-    ;
-};
-} /* nmespace functional */
-
-namespace multithread {
-class thread_pool
-{};
-} /* namespace multithread */
-
 class Solution
 {
 private:
@@ -194,8 +131,16 @@ private:
         findtwoSum_impl(thread_id, data.begin() + n * thread_id, data.end());
         
         // Wait for other threads to finish.
-        for (auto &thread: pool)
+        /*
+        for (auto &thread: pool) {
             thread.join();
+            std::cerr << " 1" << thread.get_id() << " is joinable? " << thread.joinable() << std::endl;
+        }*/
+        for (auto &thread: pool)
+            if (thread.joinable())
+                thread.join();
+        for (auto &thread: pool)
+            std::cerr << thread.get_id() << " is joinable? " << thread.joinable() << std::endl;
 
         // Clear containers
         pool.clear();
