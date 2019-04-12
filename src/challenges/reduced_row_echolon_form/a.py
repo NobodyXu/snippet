@@ -4,7 +4,7 @@ import sys
 import numpy as np
 
 def exchange_row(arr, x, y):
-    arr[x], arr[y] = arr[y], np.array(arr[x], copy = True)
+    arr[x], arr[y] = arr[y], np.array(arr[x], copy=True)
 
 # find searches from the start_row the the last row of a np.narray to find a
 # row that satisfy comp(row).
