@@ -1,23 +1,26 @@
+// This is a failed solution
+// This only works for situations where either l1 or l2 is 0 or both of them have the same size.
 #include <new>
 #include <iterator>
 #include <algorithm>
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
+struct ListNode
+{
+    int val;
+    ListNode *next = nullptr;
+
+    constexpr ListNode(int x) noexcept: val(x)
+    {}
+};
 
 class ListHead
 {
-    ListNode *begin_p;
+    ListNode *begin_p = nullptr;
     
-    struct backInsertIt
+    struct InsertIt
     {
-        ListNode *curr_p = nullptr;
+        ListNode **next_ptr_p = nullptr;
+        mutable int tmp;
         
         using difference_type = void;
         using value_type = int;
@@ -26,27 +29,27 @@ class ListHead
         using iterator_category	= std::output_iterator_tag;
               
         // This should never be used
-        bool operator != (const backInsertIt&) const noexcept
+        constexpr bool operator != (const InsertIt&) const noexcept
         {
             return true;
         }
         
-        auto& operator * () const noexcept
+        // The value returned is the value of dereferencing the previous iterator
+        auto operator * () const -> reference
         {
-            return curr_p->val;
+            return tmp;
         }
     
-        auto* operator -> () const noexcept
+        // The value returned is the value of dereferencing the previous iterator
+        auto operator -> () const -> pointer
         {
-            return &curr_p->val;
+            return &tmp;
         }
               
         auto& operator ++ ()
         {
-            auto next_p = new ListNode;
-            
-            curr_p->next = next_p;
-            curr_p = next_p;
+            *next_ptr_p = new ListNode{tmp};
+            next_ptr_p = &((*next_ptr_p)->next);
             
             return *this;
         }
@@ -59,14 +62,13 @@ class ListHead
         }
     };
 public:
-    ListHead(): begin_p{new ListNode}
-    {}
+    ListHead() = default;
     
-    auto backInsertbegin() noexcept
+    auto Insertbegin() noexcept
     {
-        return backInsertIt{begin_p};
+        return InsertIt{&begin_p};
     }
-    auto backInsertend() noexcept -> backInsertIt
+    auto Insertend() noexcept -> InsertIt
     {
         return {};
     }
@@ -78,7 +80,7 @@ public:
         return ret;
     }
     
-    ~ListHead()
+    ~ListHead() noexcept
     {
         auto curr_p = begin_p;
                 
@@ -101,7 +103,6 @@ struct list_it
     using reference = value_type&;
     using iterator_category	= std::input_iterator_tag;
           
-    // This should never be used
     bool operator != (const list_it&) const noexcept
     {
         return curr_p != nullptr;
@@ -137,7 +138,12 @@ public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListHead lists{};
         
-        std::transform(list_it{l1}, list_it{}, list_it{l2}, lists.backInsertbegin(),
+        if (l1->val == 0)
+            return l2;
+        if (l2->val == 0)
+            return l1;
+
+        std::transform(list_it{l1}, list_it{}, list_it{l2}, lists.Insertbegin(),
                        [carry = 0](const int &x, const int &y) mutable noexcept {
                            auto addition_result = x + y + carry;
                            carry = addition_result >= 10 ? 1 : 0;
