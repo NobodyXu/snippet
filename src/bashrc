@@ -5,7 +5,7 @@
 export GOROOT=/usr/local/go
 export GOPATH=$HOME
 
-export PATH=/usr/local/bin:/bin:/usr/bin:/home/nobodyxu/.cargo/bin:$GOPATH/bin:$GOROOT/bin:/home/nobodyxu/depot_tools:/usr/local/musl/bin:/opt/conda/bin
+export PATH=/opt/conda/bin:/usr/local/bin:/bin:/usr/bin:/home/nobodyxu/.cargo/bin:$GOPATH/bin:$GOROOT/bin:/home/nobodyxu/depot_tools:/usr/local/musl/bin
 
 export CC=clang-8
 export CXX=clang++-8

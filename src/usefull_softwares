@@ -181,6 +181,7 @@ nmcli -- frontend to networkmanager
 nm-connection-editor -- For editing connection of networkmanager in GUI, depended on network-manager-gnome
 
 sxiv -- for displaying images -- fast to start, lightweight
+        -a option can be used to display gifs.
 
 wajig is a Debian tool that attempts to unify Debian packagement.
 

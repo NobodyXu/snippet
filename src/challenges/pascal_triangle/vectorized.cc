@@ -1,6 +1,7 @@
 // C++14
 #include <iostream>
 #include <forward_list>
+#include <array>
 #include <iterator>
 #include <cstdint>
 
