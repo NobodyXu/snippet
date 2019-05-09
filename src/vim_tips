@@ -1,1 +1,3 @@
 Insert "vert" (fullname is verticall) before any command that split a window to make it split vertically
+Use `:retab` to convert tabs to spaces in a buffer
+Use `:set ff=unix` to convert other end-of-line format (like DOS) to Unix. From https://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim

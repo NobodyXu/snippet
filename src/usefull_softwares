@@ -229,3 +229,9 @@ nmap -- Finding computers on same network
 how2 -- from github santinic/how2 search on stackoverflow for answers to questions in terminal
 
 Telegram -- P2P encrypted messager, can transfer arbitary size of file.
+
+nslookup, dig -- Finding IP address
+
+vnstat -- Monitor network and log
+
+iftop -- Displays Bandwidth Usage
