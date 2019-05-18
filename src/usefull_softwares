@@ -239,3 +239,5 @@ vnstat -- Monitor network and log
 iftop -- Displays Bandwidth Usage
 
 smartctl device_name -a -- From deb smartmontools
+
+gparted -- Formatting drives.
