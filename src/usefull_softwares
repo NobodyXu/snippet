@@ -245,3 +245,6 @@ gparted -- Formatting drives.
 exfat-fuse exfat-utils -- Utilities for linux to read exfat-format drives.
 
 wewechat - Wechat client for linux.
+
+tail -1 -- Output the last line only.
+    Used in combination with `du -hc` print the total size of the directory.
