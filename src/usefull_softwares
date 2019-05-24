@@ -248,3 +248,9 @@ wewechat - Wechat client for linux.
 
 tail -1 -- Output the last line only.
     Used in combination with `du -hc` print the total size of the directory.
+
+```
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/unixbench.sh
+chmod +x unixbench.sh
+./unixbench.sh
+``` -- benchmark script
