@@ -254,3 +254,6 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/unixbe
 chmod +x unixbench.sh
 ./unixbench.sh
 ``` -- benchmark script
+
+For caching `apt-get` used in docker, see:
+    https://gist.github.com/dergachev/8441335
