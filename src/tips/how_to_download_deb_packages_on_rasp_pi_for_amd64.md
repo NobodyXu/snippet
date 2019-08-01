@@ -5,9 +5,9 @@ Download() {
     list="$@"
 
     while [ -n "$list" ]; do
-        apt-get download "$@"
-        dependencies=$(apt-cache depends "$@" |  grep -E 'Depends' | cut -d ':' -f 2,3 | sed -e s/'<'/''/ -e s/'>'/''/)
-        list=$dependencies
+        apt-get download "$list"
+        dependencies=$(apt-cache depends "$list" |  grep -E 'Depends' | cut -d ':' -f 2,3 | sed -e s/'<'/''/ -e s/'>'/''/)
+        list="$dependencies"
     done
 }
 
