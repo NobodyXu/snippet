@@ -1,0 +1,1 @@
+First, follow https://askubuntu.com/questions/430705/how-to-use-apt-get-to-download-multi-arch-library to enable download for multi arch, then follow https://unix.stackexchange.com/questions/115272/download-package-via-apt-for-another-architecture to download using `apt-get`.
