@@ -5,14 +5,15 @@ Download() {
     list="$@"
 
     while [ -n "$list" ]; do
+	dependencies=""
+
         for each in $list; do
             apt-get download "$each"
+            dependencies+=$(apt-cache depends "$each" |  grep -E 'Depends' | cut -d ':' -f 2,3 | sed -e s/'<'/''/ -e s/'>'/''/)
 	done
-        dependencies=$(apt-cache depends "$list" |  grep -E 'Depends' | cut -d ':' -f 2,3 | sed -e s/'<'/''/ -e s/'>'/''/)
         list="$dependencies"
     done
 }
-
 ```
 
 # Reference:
