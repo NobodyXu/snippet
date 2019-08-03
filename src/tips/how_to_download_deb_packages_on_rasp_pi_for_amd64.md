@@ -86,6 +86,8 @@ while len(List) != 0:
     List = dependencies
 ```
 
+If you want to download larget set of packages and is bored of doing this, check out [apt-cross-download](https://github.com/NobodyXu/apt-corss-download]/
+
 # Reference:
 
  1. https://askubuntu.com/questions/430705/how-to-use-apt-get-to-download-multi-arch-library
