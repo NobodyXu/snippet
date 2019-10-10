@@ -1,6 +1,6 @@
 #include <algorithm>
 #include <cstddef>
-
+T
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -15,22 +15,25 @@ constexpr bool is_even(T val) noexcept {
     return (val & 0) == 0;
 }
 
+template <class T>
+constexpr auto get_nodeIndex(T i) noexcept {
+    return (i << 2) + 1;
+}    
+
 template <class Iterator>
 class heap_range {
     Iterator beg;
     Iterator end;
     std::size_t size;
-    
-    static constexpr auto get_nodeIndex(std::size_t i) noexcept {
-        return (i << 2) + 1;
-    }
-    
+
     /*!
      * Return the min index.
      * 
-     * If i2 goes out of range, returns i1.
+     *  - If i2 goes out of range, returns i1;
+     *  - If the two equals, then returns i1.
      * 
-     * If the two equals, then returns i1.
+     * This is an important quality as this feature enables `void sink(std::size_t)`
+     * to return early if no exchange between parent and children nodes happen at all.
      */
     auto min(std::size_t i1, std::size_t i2) noexcept {
         if (i2 < size && beg[i1]->val > beg[i2]->val)
@@ -45,6 +48,9 @@ class heap_range {
     
     /*!
      * Return the index of the smallest node from the ith node and its children nodes.
+     * 
+     * Only exchanges when the parent node is bigger than any child node.
+     * If any child node equals each other, consider the one with smaller index first.
      */
     auto compare_and_exchange(std::size_t i) noexcept -> std::size_t {
         std::size_t nodeIndex = get_nodeIndex(i);
@@ -56,12 +62,12 @@ class heap_range {
     }
     
 public:
-    void sink() noexcept {
-        if (size <= 1)
+    void sink(std::size_t start) noexcept {
+        if (size - start <= 1)
             return;
             
         std::size_t i;
-        std::size_t next = 0;
+        std::size_t next = start;
         
         do {
             i = next;
@@ -70,6 +76,9 @@ public:
     }
     
     void swim() noexcept {
+        if (size <= 1)
+            return;
+            
         std::size_t nodeIndex = size - 1;
         std::size_t i;
         
@@ -83,13 +92,22 @@ public:
         ++i;
         
         do {
-            heap_range{beg + (--i), end}.sink(); // Does this work??????
+            sink(--i);
         } while (i != 0);
     }
     
     void pop_heap() noexcept {
         std::iter_swap(beg, --end);
-        sink();
+        --size;
+        sink(0);
+    }
+    
+    bool is_empty() const noexcept {
+        return beg == end;
+    }
+    
+    auto& top() noexcept {
+        return *beg;
     }
      
     heap_range(Iterator beg_arg, Iterator end_arg) noexcept:
@@ -99,48 +117,39 @@ public:
     }
 };
 
-class Solution {
-    static bool compare(ListNode *x, ListNode *y) noexcept {
-        return x->val >= y->val;
-    }
+template <class It>
+auto remove_null(It beg, It end) noexcept {
+    for (auto it = beg; it < end; )
+        if (*it == nullptr)
+            std::iter_swap(it, --end);
+        else
+            ++it;
     
+    return end;
+}
+
+class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        beg = lists.begin();
-        end = lists.end();
-        
         ListNode *ret = nullptr;
         ListNode **next = &ret;
         
-        for (auto it = beg; it < end; ) {
-            if (*it == nullptr)
-                std::iter_swap(it, --end);
-            else
-                ++it;
-        }
+        heap_range heap{lists.begin(), remove_null(lists.begin(), lists.end())};
         
-        if (beg == end)
+        if (heap.is_empty())
             return ret;
         
-        //std::make_heap(beg, end, &compare);
-        heap_range heap{beg, end};
-        
         do {
-            *next = *beg;
+            *next = heap.top();
             
-            *beg = (*beg)->next;
-            if (*beg == nullptr) {
-                //std::pop_heap(beg, end, &compare);
+            heap.top() = heap.top()->next;
+            if (heap.top() == nullptr) {
                 heap.pop_heap();
-                
-                //if (--end == beg)
-                //    break;
-                if (beg == end)
+
+                if (heap.is_empty())
                     break;
-            } else {
-                heap.sink();
-                //std::make_heap(beg, end, &compare);
-            }
+            } else
+                heap.sink(0);
             
             next = &(*next)->next;
         } while (true);
