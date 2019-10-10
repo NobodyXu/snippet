@@ -1,6 +1,6 @@
 #include <algorithm>
 #include <cstddef>
-T
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
