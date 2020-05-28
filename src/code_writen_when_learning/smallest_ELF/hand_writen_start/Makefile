@@ -1,5 +1,5 @@
 CFLAGS += -Oz -pipe -flto 
-LDFLAGS += -nostartfiles -pipe -flto -Wl,--plugin-opt=O3 -Wl,--icf=all -Wl,-O2 -Wl,--discard-all -Wl,--strip-all -Wl,--as-needed -Wl,--gc-sections
+LDFLAGS += -nostartfiles -pipe -flto -fvisibility=hidden -Wl,--plugin-opt=O3 -Wl,--icf=all -Wl,-O2 -Wl,--discard-all -Wl,--strip-all -Wl,--as-needed -Wl,--gc-sections
 
 .PHONY: all
 
